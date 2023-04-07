@@ -1,7 +1,8 @@
 import "./globals.css";
 import clsx from "clsx";
-import Sidebar from "../components/sidebar";
+import { GlobalNav } from "../components/global-nav";
 import { Source_Sans_Pro } from "next/font/google";
+import { MainCard } from "@/components/main-card";
 
 const sourceSansPro = Source_Sans_Pro({
   weight: "400",
@@ -29,18 +30,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={clsx(
-        "text-black bg-white dark:text-white dark:bg-[#111010]",
-        sourceSansPro.variable
-      )}
-    >
-      <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto">
-        <Sidebar />
-        <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
-          {children}
-        </main>
+    <html lang="en" className="[color-scheme:dark]">
+      <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')]">
+        <GlobalNav />
+        <MainCard>{children}</MainCard>
       </body>
     </html>
   );

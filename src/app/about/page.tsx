@@ -1,3 +1,4 @@
-export default function About() {
-  return <div>This is the about page</div>;
-}
+import Page from "../page";
+
+const About = Page;
+export default About;
