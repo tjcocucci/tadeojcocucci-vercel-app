@@ -9,3 +9,15 @@ export const categories: Category[] = [
   { name: "Ética de trabajo", slug: "workethics" },
   { name: "Formación académica y herramientas", slug: "skills" },
 ];
+
+function getContent(slug: string) {
+  switch (slug) {
+    case "hello":
+      return <div>Hola!</div>;
+    case "story":
+      return <div>Historia e intereses</div>;
+    case "workethics":
+      return <div>Ética de trabajo</div>;
+  }
+}
+
