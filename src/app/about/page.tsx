@@ -1,4 +1,7 @@
-import Page from "../page";
+import HomePage from "../page";
 
-const About = Page;
-export default About;
+export default function Page() {
+  return (
+      <div></div>
+  );
+}
