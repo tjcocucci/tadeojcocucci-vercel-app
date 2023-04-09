@@ -1,6 +1,8 @@
 import { TabGroup } from "@/components/tab-group";
-import { categories } from "./categories";
+import { allCards } from "contentlayer/generated";
 import HomePage from "../page";
+
+console.log(allCards[0])
 
 export default async function Layout({
   children,
@@ -13,9 +15,9 @@ export default async function Layout({
       <div className="flex justify-between">
         <TabGroup
           path="/about"
-          items={categories.map((x) => ({
-            text: x.name,
-            slug: x.slug,
+          items={allCards.map((card) => ({
+            text: card.title,
+            slug: card._raw.flattenedPath,
           }))}
         />
       </div>
