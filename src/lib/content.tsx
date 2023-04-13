@@ -25,17 +25,17 @@ export const contentItems: { name: string; items: Item[] }[] = [
     items: [
       {
         name: "Web",
-        slug: "web",
+        slug: "portfolio/web",
         description: "My web projects",
       },
       {
         name: "Unity",
-        slug: "unity",
+        slug: "portfolio/unity",
         description: "My Unity projects",
       },
       {
         name: "Académico",
-        slug: "academic",
+        slug: "portfolio/academic",
         description: "Mis proyectos académicos",
       },
     ],
@@ -45,12 +45,12 @@ export const contentItems: { name: string; items: Item[] }[] = [
     items: [
       {
         name: "Lecturas",
-        slug: "reading",
+        slug: "interests/reading",
         description: "Libros que leo",
       },
       {
         name: "Películas",
-        slug: "movies",
+        slug: "interests/movies",
         description: "Pelis que veo",
       },
     ],

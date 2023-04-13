@@ -15,30 +15,22 @@ export const Card = defineDocumentType(() => ({
         description: 'The title of the card',
         required: true,
       },
-    },
-  }))
-
-export const CV = defineDocumentType(() => ({
-    name: 'CV',
-    filePathPattern: `**/*.mdx`,
-    contentType: 'mdx',
-    fields: {
-      title: {
+      subject: {
         type: 'string',
-        description: 'The title of the card',
+        description: 'The subject of the card',
         required: true,
       },
       date: {
         type: 'date',
         description: 'Last update',
-        required: true,
+        required: false,
       },
     },
   }))
   
   export default makeSource({
     contentDirPath: 'src/content/',
-    documentTypes: [Card, CV],
+    documentTypes: [Card],
     mdx: {
       remarkPlugins: [remarkGfm],
       rehypePlugins: [

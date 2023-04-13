@@ -13,7 +13,9 @@ export default async function Layout({
       <div className="flex justify-between">
         <TabGroup
           path="/about"
-          items={allCards.map((card) => ({
+          items={allCards.filter(
+            (card) => card.subject === "About"
+          ).map((card) => ({
             text: card.title,
             slug: card._raw.flattenedPath,
           }))}
