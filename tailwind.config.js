@@ -9,7 +9,7 @@ module.exports = {
   future: {
     hoverOnlyWhenSupported: true,
   },
-  darkMode: 'class',  
+  // darkMode: 'class',  
   theme: {
     extend: {
       fontFamily: {
@@ -17,7 +17,7 @@ module.exports = {
       },
       // https://vercel.com/design/color
       colors: {
-        gray: colors.zinc,
+        gray: colors.neutral,
         'gray-1000': 'rgb(17,17,19)',
         'gray-1100': 'rgb(10,10,11)',
         vercel: {
@@ -26,6 +26,14 @@ module.exports = {
           cyan: '#50E3C2',
           orange: '#F5A623',
           violet: '#7928CA',
+        },
+      },
+      typography: {
+        quoteless: {
+          css: {
+            'blockquote p:first-of-type::before': { content: 'none' },
+            'blockquote p:first-of-type::after': { content: 'none' },
+          },
         },
       },
       backgroundImage: ({ theme }) => ({

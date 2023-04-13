@@ -2,8 +2,6 @@ import { TabGroup } from "@/components/tab-group";
 import { allCards } from "contentlayer/generated";
 import HomePage from "../page";
 
-console.log(allCards[0])
-
 export default async function Layout({
   children,
 }: {
