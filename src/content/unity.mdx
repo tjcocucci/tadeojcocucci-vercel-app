@@ -1,0 +1,27 @@
+---
+title: Proyectos Unity
+type: Card
+subject: Portfolio
+---
+
+Este juego es un shooter básico que creé siguiendo <CustomLink href="https://www.youtube.com/playlist?list=PLFt_AvWsXl0ctd4dgE1F8g3uec4zKNRV0">este</CustomLink> genial tutorial de Sebastian Lague.
+
+<YouTubeEmbed src="https://www.youtube.com/embed/GBE1x5ZxiDc"/>
+
+Tiene muchas features que fueron muy divertidas de programar, como estas:
+
+- Generación procedural de niveles con editor custom de mapas: esto te permite generar los obstáculos y disponerlos de forma aleatoria y con distinta densidad pero siempre asegurándote de que se puede acceder a cada casillero del nivel.
+- Spawn de enemigos en distintas posiciones del mapa. Pero si campeás un mismo casillero te va a aparecer un enemigo encima! Todos los enemigos tienen un sistema de navegación que evita obstáculos.
+- Distintos tipos de armas (automática, semi, un disparo) con animaciones para el fuego del barril y con cartuchos que caen.
+
+---
+
+También siguiendo <CustomLink href="https://www.youtube.com/playlist?list=PLFt_AvWsXl0eBW2EiBtl_sxmDtSgZBxB3">un proyecto</CustomLink> de Sebastian Lague, conseguí armar este generador procedural de terrenos usando ruido de Perlin, configurable para usar diferente cantidad de octavas y valores de lacunaridad y persistencia.
+Algunas cosas lindas de este proyecto super divertido:
+
+- Editor customizado para jugar con las diferentes variables que configuran al terreno.
+- Los mosaicos de terreno se cargan en base a la posición del jugador de manera que el terreno es infinito. Además, para optimizar la performance, los mosaicos más lejanos a la posición del jugador tienen menor nivel de detalle.
+- Usando shaders se pueden diseñar dstintos niveles de colores y texturas para las distintas elevaciones.
+- Threading para evitar una sobrecarga de uso de CPU cuando un nuevo mosaico se tiene que cargar porque entró en el campo de visión del jugador.
+
+<YouTubeEmbed src="https://www.youtube.com/embed/vwuGZxV2O5E"/>
