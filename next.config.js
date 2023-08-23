@@ -13,6 +13,15 @@ const nextConfig = {
       },
     ];
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.imgur.com',
+        pathname: "/**",
+      },
+    ],
+  },
 };
 
 // https://nextjs.org/docs/advanced-features/security-headers

@@ -2,14 +2,14 @@ import Image from "next/image";
 import profilePic from "../../public/profile.jpg";
 import { Card } from "./card";
 
-export function Profile() {
+export function Profile({ width }: { width?: number }) {
   return (
     <Image
       alt="Profile picture"
       className="rounded-full"
       src={profilePic}
       placeholder="blur"
-      width={200}
+      width={width || 200}
       priority
     />
   );
@@ -25,4 +25,3 @@ export function ProfileCard() {
     </Card>
   );
 }
-

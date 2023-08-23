@@ -30,10 +30,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="[color-scheme:dark]">
-      <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')]">
+    <html
+    lang="en"
+    className={clsx(
+      'text-gray-800 bg-white dark:text-gray-400 dark:bg-[#1e1e1e]',
+      sourceSansPro.variable
+    )}
+  >
+      <body className="antialiased mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto">
         <GlobalNav />
+        <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
         <MainCard>{children}</MainCard>
+        </main>
       </body>
     </html>
   );

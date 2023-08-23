@@ -53,6 +53,11 @@ export const contentItems: { name: string; items: Item[] }[] = [
         slug: "interests/movies",
         description: "Pelis que veo",
       },
+      {
+        name: "Fotografía",
+        slug: "interests/photography",
+        description: "Fotos que saco",
+      },
     ],
   },
   {

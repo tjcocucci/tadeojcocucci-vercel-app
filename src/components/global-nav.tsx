@@ -1,7 +1,7 @@
 'use client';
 
 import { contentItems, type Item } from '../lib/content';
-import { Logo } from './logo';
+import { Profile } from './profile';
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 // import { MenuAlt2Icon, XIcon } from '@heroicons/react/solid';
@@ -13,7 +13,8 @@ export function GlobalNav() {
   const close = () => setIsOpen(false);
 
   return (
-    <div className="fixed top-0 z-10 flex w-full flex-col border-b border-gray-800 bg-black lg:bottom-0 lg:z-auto lg:w-72 lg:border-b-0 lg:border-r lg:border-gray-800">
+    <div className="fixed top-0 z-10 flex w-full flex-col border-b border-gray-800 lg:bottom-0 lg:z-auto lg:w-72 lg:border-b-0 lg:border-r lg:border-gray-800">
+      {/* Logo + Name */}
       <div className="flex h-14 items-center py-4 px-4 lg:h-auto">
         <Link
           href="/"
@@ -21,14 +22,15 @@ export function GlobalNav() {
           onClick={close}
         >
           <div className="h-7 w-7 rounded-full border border-white/30 group-hover:border-white/50">
-            <Logo />
+            <Profile width={40} />
           </div>
 
-          <h3 className="font-semibold tracking-wide text-gray-400 group-hover:text-gray-50">
+          <h3 className="font-semibold tracking-wide group-hover:text-gray-50">
             Tadeo Javier Cocucci
           </h3>
         </Link>
       </div>
+      {/* Menu button when screen too narrow */}
       <button
         type="button"
         className="group absolute right-0 top-0 flex h-14 items-center gap-x-2 px-4 lg:hidden"
@@ -46,10 +48,11 @@ export function GlobalNav() {
 
       <div
         className={clsx('overflow-y-auto lg:static lg:block', {
-          'fixed inset-x-0 bottom-0 top-14 mt-px bg-black': isOpen,
+          'fixed inset-x-0 bottom-0 top-14 mt-px bg-white dark:bg-black': isOpen,
           hidden: !isOpen,
         })}
       >
+        {/* Menu items */}
         <nav className="space-y-6 px-2 py-5">
           {contentItems.map((section) => {
             return (

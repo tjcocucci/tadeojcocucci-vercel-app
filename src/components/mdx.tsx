@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Slideshow from "./slideshow";
 import { useMDXComponent } from "next-contentlayer/hooks";
 
 const CustomLink = (props: any) => {
@@ -38,6 +39,7 @@ const components = {
   Image: Image,
   CustomLink,
   YouTubeEmbed,
+  Slideshow,
 };
 
 export function Mdx({ code }: { code: string }) {
