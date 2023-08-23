@@ -9,7 +9,7 @@ export const contentItems: { name: string; items: Item[] }[] = [
     name: "Sobre mí",
     items: [
       {
-        name: "Hola!",
+        name: "hello",
         slug: "about/hello",
         description: "Información sobre mí y mi trabajo",
       },
@@ -21,7 +21,7 @@ export const contentItems: { name: string; items: Item[] }[] = [
     ],
   },
   {
-    name: "Portfolio",
+    name: "portfolio",
     items: [
       {
         name: "Web",
@@ -41,7 +41,7 @@ export const contentItems: { name: string; items: Item[] }[] = [
     ],
   },
   {
-    name: "Intereses",
+    name: "interests",
     items: [
       {
         name: "Lecturas",
