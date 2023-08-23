@@ -10,7 +10,7 @@ export const contentItems: { name: string; items: Item[] }[] = [
     items: [
       {
         name: "Hola!",
-        slug: "about",
+        slug: "about/hello",
         description: "Información sobre mí y mi trabajo",
       },
       {
