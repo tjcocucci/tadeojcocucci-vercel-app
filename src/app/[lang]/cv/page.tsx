@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { allCards } from "contentlayer/generated";
 import { format, parseISO } from "date-fns";
-import { Mdx } from "../../components/mdx";
+import { Mdx } from "@/components/mdx";
 
 export default async function Page() {
   const cv = allCards.find((card: any) => card.subject === "CV");

@@ -1,4 +1,4 @@
-import { contentItems } from "../../lib/content";
+import { contentItems } from "@/lib/content";
 import Link from "next/link";
 
 export default function About() {

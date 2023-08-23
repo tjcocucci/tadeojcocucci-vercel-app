@@ -9,7 +9,6 @@ export function Slideshow(props) {
   
   const ref = useRef(0);
   const slideImages = props.images;
-  console.log(slideImages);
 
   function back() {
     ref.current.goBack();

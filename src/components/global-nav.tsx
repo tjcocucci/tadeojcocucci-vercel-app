@@ -1,12 +1,14 @@
-'use client';
+"use client";
 
-import { contentItems, type Item } from '../lib/content';
-import { Profile } from './profile';
-import Link from 'next/link';
-import { useSelectedLayoutSegment } from 'next/navigation';
+import { contentItems, type Item } from "../lib/content";
+import { Profile } from "./profile";
+import Link from "next/link";
+import { useSelectedLayoutSegment } from "next/navigation";
 // import { MenuAlt2Icon, XIcon } from '@heroicons/react/solid';
-import clsx from 'clsx';
-import { useState } from 'react';
+import clsx from "clsx";
+import { useState } from "react";
+import LocaleSwitcher from "@/components/locale-switcher";
+import { Text } from "@/context/languageContext";
 
 export function GlobalNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,10 +47,13 @@ export function GlobalNav() {
           <MenuAlt2Icon className="block w-6 text-gray-400" />
         )} */}
       </button>
+      <LocaleSwitcher />
+      <div className="div"> {Text("aboutMe")}</div>
 
       <div
-        className={clsx('overflow-y-auto lg:static lg:block', {
-          'fixed inset-x-0 bottom-0 top-14 mt-px bg-white dark:bg-black': isOpen,
+        className={clsx("overflow-y-auto lg:static lg:block", {
+          "fixed inset-x-0 bottom-0 top-14 mt-px bg-white dark:bg-black":
+            isOpen,
           hidden: !isOpen,
         })}
       >
@@ -58,7 +63,7 @@ export function GlobalNav() {
             return (
               <div key={section.name}>
                 <div className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-gray-400/80">
-                  <div>{section.name}</div>
+                  <div>{section.name}</div>{" "}
                 </div>
 
                 <div className="space-y-1">
@@ -90,11 +95,11 @@ function GlobalNavItem({
       onClick={close}
       href={`/${item.slug}`}
       className={clsx(
-        'block rounded-md px-3 py-2 text-sm font-medium hover:text-gray-300',
+        "block rounded-md px-3 py-2 text-sm font-medium hover:text-gray-300",
         {
-          'text-gray-400 hover:bg-gray-800': !isActive,
-          'text-white': isActive,
-        },
+          "text-gray-400 hover:bg-gray-800": !isActive,
+          "text-white": isActive,
+        }
       )}
     >
       {item.name}
