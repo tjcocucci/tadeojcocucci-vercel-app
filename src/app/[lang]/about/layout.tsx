@@ -9,16 +9,16 @@ export default async function Layout({
 }) {
   return (
     <div className="space-y-9">
-    <HomePage />
+      <HomePage />
       <div className="flex justify-between">
         <TabGroup
           path="/about"
-          items={allCards.filter(
-            (card) => card.subject === "About"
-          ).map((card) => ({
-            text: card.title,
-            slug: card._raw.flattenedPath,
-          }))}
+          items={allCards
+            .filter((card) => card.subject === "About")
+            .map((card) => ({
+              text: card.title,
+              slug: card._raw.flattenedPath,
+            }))}
         />
       </div>
       <div>{children}</div>

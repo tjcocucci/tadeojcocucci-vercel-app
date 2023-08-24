@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState} from "react";
+import React, { useContext } from "react";
 import { LanguageContext } from "@/context/languageContext";
 import { i18n, Locale } from "@/../i18n-config";
 
@@ -9,8 +9,8 @@ export default function LocaleSwitcher() {
     const newLocale = i18n.locales.includes(e.target.value as Locale)
       ? e.target.value
       : i18n.defaultLocale;
-      userLanguageChange(newLocale as Locale);
-      };
+    userLanguageChange(newLocale as Locale);
+  };
 
   return (
     <div>

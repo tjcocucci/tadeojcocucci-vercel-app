@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useRef } from "react";
 import Image from "next/image";
@@ -6,7 +6,6 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
 export function Slideshow(props) {
-  
   const ref = useRef(0);
   const slideImages = props.images;
 
@@ -17,7 +16,6 @@ export function Slideshow(props) {
   function next() {
     ref.current.goNext();
   }
-
 
   const properties = {
     duration: 5000,
@@ -35,7 +33,13 @@ export function Slideshow(props) {
         <Slide ref={ref} {...properties}>
           {slideImages.map((each, index) => (
             <div key={index + 1} className="each-slide">
-              <Image className="lazy" src={each.url} alt="sample" width="400" height="400"/>
+              <Image
+                className="lazy"
+                src={each.url}
+                alt="sample"
+                width="400"
+                height="400"
+              />
               <p>{each.caption}</p>
             </div>
           ))}

@@ -1,5 +1,5 @@
+import LocailzedLink from "@/components/LocalizedLink";
 import { contentItems } from "@/lib/content";
-import Link from "next/link";
 
 export default function About() {
   return (
@@ -17,7 +17,7 @@ export default function About() {
               <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
                 {section.items.map((item) => {
                   return (
-                    <Link
+                    <LocailzedLink
                       href={`/${item.slug}`}
                       key={item.name}
                       className="group block space-y-1.5 rounded-lg bg-gray-900 px-5 py-3 hover:bg-gray-800"
@@ -31,7 +31,7 @@ export default function About() {
                           {item.description}
                         </div>
                       ) : null}
-                    </Link>
+                    </LocailzedLink>
                   );
                 })}
               </div>

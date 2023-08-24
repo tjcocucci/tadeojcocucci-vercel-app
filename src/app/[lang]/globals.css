@@ -38,7 +38,6 @@ html {
   @apply visible;
 }
 
-
 code[class*="language-"],
 pre[class*="language-"] {
   @apply text-neutral-50;

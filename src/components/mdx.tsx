@@ -1,17 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Slideshow from "./slideshow";
 import { useMDXComponent } from "next-contentlayer/hooks";
+import LocailzedLink from "./LocalizedLink";
 
 const CustomLink = (props: any) => {
   const href = props.href;
 
   if (href.startsWith("/")) {
     return (
-      <Link href={href} {...props}>
+      <LocailzedLink href={href} {...props}>
         {props.children}
-      </Link>
+      </LocailzedLink>
     );
   }
 

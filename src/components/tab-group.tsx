@@ -1,4 +1,4 @@
-import { Tab } from './tab';
+import { Tab } from "./tab";
 
 export type Item = {
   text: string;

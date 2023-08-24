@@ -2,13 +2,14 @@
 
 import { contentItems, type Item } from "../lib/content";
 import { Profile } from "./profile";
-import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 // import { MenuAlt2Icon, XIcon } from '@heroicons/react/solid';
 import clsx from "clsx";
 import { useState } from "react";
 import LocaleSwitcher from "@/components/locale-switcher";
 import { Text } from "@/context/languageContext";
+import Link from "next/link";
+import LocalizedLink from "./LocalizedLink";
 
 export function GlobalNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ export function GlobalNav() {
     <div className="fixed top-0 z-10 flex w-full flex-col border-b border-gray-800 lg:bottom-0 lg:z-auto lg:w-72 lg:border-b-0 lg:border-r lg:border-gray-800">
       {/* Logo + Name */}
       <div className="flex h-14 items-center py-4 px-4 lg:h-auto">
-        <Link
+        <LocalizedLink
           href="/"
           className="group flex w-full items-center gap-x-2.5"
           onClick={close}
@@ -30,7 +31,7 @@ export function GlobalNav() {
           <h3 className="font-semibold tracking-wide group-hover:text-gray-50">
             Tadeo Javier Cocucci
           </h3>
-        </Link>
+        </LocalizedLink>
       </div>
       {/* Menu button when screen too narrow */}
       <button
@@ -91,7 +92,7 @@ function GlobalNavItem({
   const isActive = item.slug === segment;
 
   return (
-    <Link
+    <LocalizedLink
       onClick={close}
       href={`/${item.slug}`}
       className={clsx(
@@ -99,10 +100,10 @@ function GlobalNavItem({
         {
           "text-gray-400 hover:bg-gray-800": !isActive,
           "text-white": isActive,
-        }
+        },
       )}
     >
       {item.name}
-    </Link>
+    </LocalizedLink>
   );
 }

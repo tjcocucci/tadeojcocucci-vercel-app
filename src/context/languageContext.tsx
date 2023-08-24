@@ -7,11 +7,9 @@ import type { Locale } from "../../i18n-config";
 import { i18n } from "../../i18n-config";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
-
-const defaultLanguage = i18n.defaultLocale as Locale;
+import redirectedPathName from "@/lib/redirectedPathName";
 
 // create the language context with default selected language
-// export const LanguageContext = createContext(null);
 export const LanguageContext = createContext({
   userLanguage: null,
   dictionary: {},
@@ -41,17 +39,16 @@ export function LanguageProvider({
   }, []);
 
   const userLanguageChange = async (selected: Locale) => {
-    const redirectedPathName = (locale: string) => {
-      if (!pathName) return "/";
-      const segments = pathName.split("/");
-      segments[1] = locale;
-      return segments.join("/");
-    };
-    router.push(redirectedPathName(selected));
     setUserLanguage(selected);
     getDictionary(selected)
       .then((dict) => dict && setDictionary(dict))
       .catch((err) => console.error(err));
+    const pathSegments = pathName.split("/").filter((s) => s.length > 0);
+    if (i18n.locales.includes(pathSegments[0] as Locale)) {
+      pathSegments.shift();
+    }
+
+    router.push(redirectedPathName(pathSegments.join("/"), selected));
   };
 
   const provider = {
@@ -65,6 +62,11 @@ export function LanguageProvider({
       {children}
     </LanguageContext.Provider>
   );
+}
+
+export function useLocale() {
+  const languageContext = useContext(LanguageContext);
+  return languageContext.userLanguage;
 }
 
 // get text according to id & current language

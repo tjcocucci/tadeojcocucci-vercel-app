@@ -2,11 +2,16 @@ import { notFound } from "next/navigation";
 import { allCards } from "contentlayer/generated";
 import { Mdx } from "./mdx";
 
-export function MdxCard({categorySlug, subject} : {categorySlug: string, subject: string}) {
+export function MdxCard({
+  categorySlug,
+  subject,
+}: {
+  categorySlug: string;
+  subject: string;
+}) {
   const card = allCards.find(
     (card: any) =>
-      card.subject === subject &&
-      card._raw.flattenedPath === categorySlug
+      card.subject === subject && card._raw.flattenedPath === categorySlug,
   );
   if (!card) {
     notFound();
