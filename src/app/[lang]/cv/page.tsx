@@ -1,10 +1,16 @@
+"use client";
+
 import { notFound } from "next/navigation";
 import { allCards } from "contentlayer/generated";
 import { format, parseISO } from "date-fns";
 import { Mdx } from "@/components/mdx";
+import { useLocale } from "@/context/languageContext";
 
-export default async function Page() {
-  const cv = allCards.find((card: any) => card.subject === "CV");
+export default function Page() {
+  const locale = useLocale();
+  const cv = allCards.find(
+    (card: any) => card.identifier === "about/cv" && card.locale === locale
+    );
   if (!cv) {
     notFound();
   }

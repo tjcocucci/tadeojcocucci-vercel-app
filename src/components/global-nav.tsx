@@ -7,8 +7,7 @@ import { useSelectedLayoutSegment } from "next/navigation";
 import clsx from "clsx";
 import { useState } from "react";
 import LocaleSwitcher from "@/components/locale-switcher";
-import { Text } from "@/context/languageContext";
-import Link from "next/link";
+import { LocalizedText as t } from "@/context/languageContext";
 import LocalizedLink from "./LocalizedLink";
 
 export function GlobalNav() {
@@ -49,7 +48,7 @@ export function GlobalNav() {
         )} */}
       </button>
       <LocaleSwitcher />
-      <div className="div"> {Text("aboutMe")}</div>
+      <div className="div"> {t("aboutMe")}</div>
 
       <div
         className={clsx("overflow-y-auto lg:static lg:block", {
@@ -64,7 +63,7 @@ export function GlobalNav() {
             return (
               <div key={section.name}>
                 <div className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-gray-400/80">
-                  <div>{section.name}</div>{" "}
+                  <div>{t(section.name)}</div>{" "}
                 </div>
 
                 <div className="space-y-1">
@@ -103,7 +102,7 @@ function GlobalNavItem({
         },
       )}
     >
-      {item.name}
+      {t(item.name)}
     </LocalizedLink>
   );
 }

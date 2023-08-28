@@ -1,5 +1,8 @@
+"use client";
+
 import LocailzedLink from "@/components/LocalizedLink";
 import { contentItems } from "@/lib/content";
+import { LocalizedText as t } from "@/context/languageContext";
 
 export default function About() {
   return (
@@ -11,7 +14,7 @@ export default function About() {
           return (
             <div key={section.name} className="space-y-5">
               <div className="text-xs font-semibold uppercase tracking-wider text-gray-400">
-                {section.name}
+                {t(section.name)}
               </div>
 
               <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
@@ -23,12 +26,12 @@ export default function About() {
                       className="group block space-y-1.5 rounded-lg bg-gray-900 px-5 py-3 hover:bg-gray-800"
                     >
                       <div className="font-medium text-gray-200 group-hover:text-gray-50">
-                        {item.name}
+                        {t(item.name)}
                       </div>
 
                       {item.description ? (
                         <div className="text-sm text-gray-400 line-clamp-3 group-hover:text-gray-300">
-                          {item.description}
+                          {t(item.description)}
                         </div>
                       ) : null}
                     </LocailzedLink>

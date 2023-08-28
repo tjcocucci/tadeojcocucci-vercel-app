@@ -1,0 +1,29 @@
+---
+title: Unity Projects
+type: Card
+identifier: portfolio/unity
+locale: en
+---
+
+
+This game is a basic shooter I created following <CustomLink href="https://www.youtube.com/playlist?list=PLFt_AvWsXl0ctd4dgE1F8g3uec4zKNRV0">this</CustomLink> fantastic tutorial by Sebastian Lague.
+
+<YouTubeEmbed src="https://www.youtube.com/embed/GBE1x5ZxiDc" />
+
+It has many features that were a lot of fun to program, such as:
+
+- Procedural level generation with a custom map editor: This allows you to generate obstacles and place them randomly with varying density, while ensuring access to each grid cell.
+- Enemy spawning in different positions on the map. But if you camp in the same cell, an enemy will appear on top of you! All enemies have a navigation system that avoids obstacles.
+- Different types of weapons (automatic, semi-automatic, single shot) with barrel fire animations and falling cartridges.
+
+---
+
+Also, following <CustomLink href="https://www.youtube.com/playlist?list=PLFt_AvWsXl0eBW2EiBtl_sxmDtSgZBxB3">this</CustomLink> project by Sebastian Lague, I managed to create this procedural terrain generator using Perlin noise, configurable for different numbers of octaves, lacunarity, and persistence values.
+Some nice things about this super fun project:
+
+- Customized editor to play with various variables that configure the terrain.
+- Terrain tiles are loaded based on the player's position, making the terrain infinite. Additionally, for performance optimization, tiles farther from the player's position have less detail.
+- Using shaders, different color and texture levels can be designed for various elevations.
+- Threading is used to prevent CPU overload when a new tile needs to be loaded because it enters the player's field of view.
+
+<YouTubeEmbed src="https://www.youtube.com/embed/vwuGZxV2O5E" />

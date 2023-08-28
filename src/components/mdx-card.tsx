@@ -1,6 +1,9 @@
+"use client";
+
 import { notFound } from "next/navigation";
 import { allCards } from "contentlayer/generated";
 import { Mdx } from "./mdx";
+import { useLocale } from "@/context/languageContext";
 
 export function MdxCard({
   categorySlug,
@@ -9,9 +12,11 @@ export function MdxCard({
   categorySlug: string;
   subject: string;
 }) {
+  const locale = useLocale();
   const card = allCards.find(
     (card: any) =>
-      card.subject === subject && card._raw.flattenedPath === categorySlug,
+      card.identifier === subject + "/" + categorySlug &&
+      card.locale === locale
   );
   if (!card) {
     notFound();

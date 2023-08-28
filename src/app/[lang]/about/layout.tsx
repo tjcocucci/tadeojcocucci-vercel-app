@@ -1,12 +1,12 @@
+"use client";
+
 import { TabGroup } from "@/components/tab-group";
 import { allCards } from "contentlayer/generated";
 import HomePage from "../page";
+import { useLocale } from "@/context/languageContext";
 
-export default async function Layout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const locale = useLocale();
   return (
     <div className="space-y-9">
       <HomePage />
@@ -14,10 +14,14 @@ export default async function Layout({
         <TabGroup
           path="/about"
           items={allCards
-            .filter((card) => card.subject === "About")
+            .filter(
+              (card) =>
+                card.identifier.split("/")[0] === "about" &&
+                card.locale === locale,
+            )
             .map((card) => ({
               text: card.title,
-              slug: card._raw.flattenedPath,
+              slug: card.identifier.split("/")[1],
             }))}
         />
       </div>

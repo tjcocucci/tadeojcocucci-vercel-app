@@ -6,67 +6,67 @@ export type Item = {
 
 export const contentItems: { name: string; items: Item[] }[] = [
   {
-    name: "Sobre mí",
+    name: "aboutMe",
     items: [
       {
-        name: "Hola!",
+        name: "hello",
         slug: "about/hello",
-        description: "Información sobre mí y mi trabajo",
+        description: "aboutMeDescription",
       },
       {
-        name: "Currículum",
+        name: "cv",
         slug: "cv",
-        description: "Mi CV",
+        description: "cvDescription",
       },
     ],
   },
   {
-    name: "Portfolio",
+    name: "portfolio",
     items: [
       {
-        name: "Web",
+        name: "web",
         slug: "portfolio/web",
-        description: "My web projects",
+        description: "webDescription",
       },
       {
-        name: "Unity",
+        name: "unity",
         slug: "portfolio/unity",
-        description: "My Unity projects",
+        description: "unityDescription",
       },
       {
-        name: "Académico",
+        name: "academic",
         slug: "portfolio/academic",
-        description: "Mis proyectos académicos",
+        description: "academicDescription",
       },
     ],
   },
   {
-    name: "Intereses",
+    name: "interests",
     items: [
       {
-        name: "Lecturas",
+        name: "reading",
         slug: "interests/reading",
-        description: "Libros que leo",
+        description: "readingDescription",
       },
       {
-        name: "Películas",
+        name: "movies",
         slug: "interests/movies",
-        description: "Pelis que veo",
+        description: "moviesDescription",
       },
       {
-        name: "Fotografía",
+        name: "photography",
         slug: "interests/photography",
-        description: "Fotos que saco",
+        description: "photographyDescription",
       },
     ],
   },
   {
-    name: "Miscelánea",
+    name: "sitemap",
     items: [
       {
-        name: "Mapa del sitio",
+        name: "sitemap",
         slug: "sitemap",
-        description: "Un mapa de este sitio",
+        description: "sitemapDescription",
       },
     ],
   },

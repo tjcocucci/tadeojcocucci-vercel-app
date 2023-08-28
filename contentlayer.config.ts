@@ -14,9 +14,14 @@ export const Card = defineDocumentType(() => ({
       description: "The title of the card",
       required: true,
     },
-    subject: {
+    identifier: {
       type: "string",
-      description: "The subject of the card",
+      description: "Identifier of the card",
+      required: true,
+    },
+    locale: {
+      type: "string",
+      description: "The locale language of the card",
       required: true,
     },
     date: {
