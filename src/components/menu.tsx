@@ -10,28 +10,12 @@ import LocaleSwitcher from "@/components/locale-switcher";
 import { LocalizedText as t } from "@/context/languageContext";
 import LocalizedLink from "./LocalizedLink";
 
-export function GlobalNav() {
+export function Menu() {
   const [isOpen, setIsOpen] = useState(false);
   const close = () => setIsOpen(false);
 
   return (
-    <div className="fixed top-0 z-10 flex w-full flex-col border-b border-gray-800 lg:bottom-0 lg:z-auto lg:w-72 lg:border-b-0 lg:border-r lg:border-gray-800">
-      {/* Logo + Name */}
-      <div className="flex h-14 items-center py-4 px-4 lg:h-auto">
-        <LocalizedLink
-          href="/"
-          className="group flex w-full items-center gap-x-2.5"
-          onClick={close}
-        >
-          <div className="h-7 w-7 rounded-full border border-white/30 group-hover:border-white/50">
-            <Profile width={40} />
-          </div>
-
-          <h3 className="font-semibold tracking-wide group-hover:text-gray-50">
-            Tadeo Javier Cocucci
-          </h3>
-        </LocalizedLink>
-      </div>
+    <div className="p-4 w-1/3 ">
       {/* Menu button when screen too narrow */}
       <button
         type="button"
@@ -47,7 +31,6 @@ export function GlobalNav() {
           <MenuAlt2Icon className="block w-6 text-gray-400" />
         )} */}
       </button>
-      <LocaleSwitcher />
       <div className="div"> {t("aboutMe")}</div>
 
       <div

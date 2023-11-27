@@ -1,8 +1,9 @@
 import "./globals.css";
 import clsx from "clsx";
-import { GlobalNav } from "@/components/global-nav";
-import { Source_Sans_Pro } from "next/font/google";
+import { Menu } from "@/components/menu";
+import { NavBar } from "@/components/navbar";
 import { MainCard } from "@/components/main-card";
+import { Source_Sans_Pro } from "next/font/google";
 import { LanguageProvider } from "@/context/languageContext";
 import { i18n } from "@/../i18n-config";
 
@@ -45,14 +46,17 @@ export default function RootLayout({
         sourceSansPro.variable,
       )}
     >
-      <body className="antialiased mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto">
-        <LanguageProvider locale={params.lang}>
-          <GlobalNav />
-          <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
-            <MainCard>{children}</MainCard>
-          </main>
-        </LanguageProvider>
-      </body>
+      <LanguageProvider locale={params.lang}>
+        <body className="w-1/2 mx-auto">
+          <NavBar />
+          <div className="flex flex-row items-start mx-auto h-screen">
+            <Menu />
+            <div className="w-2/3">
+              <MainCard>{children}</MainCard>
+            </div>
+          </div>
+        </body>
+      </LanguageProvider>
     </html>
   );
 }

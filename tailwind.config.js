@@ -3,7 +3,8 @@ const colors = require("tailwindcss/colors");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx}", "!./node_modules", 
+],
   future: {
     hoverOnlyWhenSupported: true,
   },
@@ -37,7 +38,7 @@ module.exports = {
       backgroundImage: ({ theme }) => ({
         "vc-border-gradient": `radial-gradient(at left top, ${theme(
           "colors.gray.500",
-        )}, 50px, ${theme("colors.gray.800")} 50%)`,
+        )}, 50px, ${theme("colors.gray.800")} 200px)`,
       }),
       keyframes: ({ theme }) => ({
         rerender: {
