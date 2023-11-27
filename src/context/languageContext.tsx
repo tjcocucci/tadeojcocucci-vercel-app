@@ -48,7 +48,7 @@ export function LanguageProvider({
       pathSegments.shift();
     }
 
-    router.push(redirectedPathName(pathSegments.join("/"), selected));
+    router.replace(redirectedPathName(pathSegments.join("/"), selected));
   };
 
   const provider = {

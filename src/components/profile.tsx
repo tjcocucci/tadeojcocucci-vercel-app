@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import profilePic from "../../public/profile.jpg";
 import { Card } from "./card";
@@ -35,11 +36,11 @@ export function ProfileCard() {
         </p>
         <p className="flex items-center space-x-2">
           <GitHubIcon color="white" />
-          <a href="github.com/tjcocucci">github.com/tjcocucci</a>
+          <a href="https://github.com/tjcocucci" target="_blank" rel="noopener noreferrer">github</a>
         </p>
         <p className="flex items-center space-x-2 align-baseline">
           <LinkedInIcon color="white" />
-          <a href="linkedin.com/in/tjcocucci/">linkedin.com/in/tjcocucci/</a>
+          <a href="https://linkedin.com/in/tjcocucci/" target="_blank" rel="noopener noreferrer">linkedin</a>
         </p>
       </div>
     </Card>
