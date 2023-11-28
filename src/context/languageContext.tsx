@@ -36,13 +36,13 @@ export function LanguageProvider({
         .catch((err) => console.error(err));
     }
     fetchDictionary();
-  }, []);
+  }, [userLanguage]);
 
   const userLanguageChange = async (selected: Locale) => {
-    setUserLanguage(selected);
-    getDictionary(selected)
-      .then((dict) => dict && setDictionary(dict))
-      .catch((err) => console.error(err));
+    // setUserLanguage(selected);
+    // const dict = await getDictionary(selected);
+    // setDictionary(dict || {});
+
     const pathSegments = pathName.split("/").filter((s) => s.length > 0);
     if (i18n.locales.includes(pathSegments[0] as Locale)) {
       pathSegments.shift();
