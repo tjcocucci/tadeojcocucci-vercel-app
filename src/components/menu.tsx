@@ -7,8 +7,8 @@ import { useSelectedLayoutSegment } from "next/navigation";
 import clsx from "clsx";
 import { useState } from "react";
 import LocaleSwitcher from "@/components/locale-switcher";
-import { LocalizedText as t } from "@/context/languageContext";
-import LocalizedLink from "./LocalizedLink";
+import { LocalizedText as t } from "@/context/language-context";
+import LocalizedLink from "./localized-link";
 
 export function Menu() {
   const [isOpen, setIsOpen] = useState(false);

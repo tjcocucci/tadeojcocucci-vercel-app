@@ -1,6 +1,6 @@
 'use client'
 import React, { useContext } from "react";
-import { LanguageContext } from "@/context/languageContext";
+import { LanguageContext } from "@/context/language-context";
 import { i18n, Locale } from "@/../i18n-config";
 import clsx from "clsx";
 

@@ -1,6 +1,6 @@
 import { Profile } from "./profile";
 import LocaleSwitcher from "@/components/locale-switcher";
-import LocalizedLink from "./LocalizedLink";
+import LocalizedLink from "./localized-link";
 
 export function NavBar() {
   return (

@@ -4,7 +4,7 @@ import { Menu } from "@/components/menu";
 import { NavBar } from "@/components/navbar";
 import { MainCard } from "@/components/main-card";
 import { Inter } from 'next/font/google'
-import { LanguageProvider } from "@/context/languageContext";
+import { LanguageProvider } from "@/context/language-context";
 import { i18n } from "@/../i18n-config";
 
 export async function generateStaticParams() {

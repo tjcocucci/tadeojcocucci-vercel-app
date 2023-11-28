@@ -2,8 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
-import redirectedPathName from "@/lib/redirectedPathName";
-import { useLocale } from "@/context/languageContext";
+import redirectedPathName from "@/lib/redirected-pathname";
+import { useLocale } from "@/context/language-context";
 
 export default function LocailzedLink({ href, children, ...props }) {
   const locale = useLocale();

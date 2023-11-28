@@ -7,7 +7,7 @@ import type { Locale } from "../../i18n-config";
 import { i18n } from "../../i18n-config";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
-import redirectedPathName from "@/lib/redirectedPathName";
+import redirectedPathName from "@/lib/redirected-pathname";
 
 // create the language context with default selected language
 export const LanguageContext = createContext({

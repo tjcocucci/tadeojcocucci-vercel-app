@@ -5,7 +5,7 @@ import { Card } from "./card";
 import MailIcon from "public/mail";
 import GitHubIcon from "public/github";
 import LinkedInIcon from "public/linkedin";
-import { LocalizedText as t } from "@/context/languageContext";
+import { LocalizedText as t } from "@/context/language-context";
 
 export function Profile({ width }: { width?: number }) {
   return (

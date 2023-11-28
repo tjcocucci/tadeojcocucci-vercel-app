@@ -3,7 +3,7 @@
 import { TabGroup } from "@/components/tab-group";
 import { allCards } from "contentlayer/generated";
 import HomePage from "../page";
-import { useLocale } from "@/context/languageContext";
+import { useLocale } from "@/context/language-context";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const locale = useLocale();

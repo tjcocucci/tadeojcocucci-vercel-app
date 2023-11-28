@@ -3,7 +3,7 @@
 import { notFound } from "next/navigation";
 import { allCards } from "contentlayer/generated";
 import { Mdx } from "./mdx";
-import { useLocale } from "@/context/languageContext";
+import { useLocale } from "@/context/language-context";
 
 export function MdxCard({
   categorySlug,

@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { allCards } from "contentlayer/generated";
 import { format, parseISO } from "date-fns";
 import { Mdx } from "@/components/mdx";
-import { useLocale } from "@/context/languageContext";
+import { useLocale } from "@/context/language-context";
 
 export default function Page() {
   const locale = useLocale();

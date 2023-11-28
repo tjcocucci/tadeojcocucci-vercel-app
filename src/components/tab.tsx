@@ -2,7 +2,7 @@
 
 import type { Item } from "./tab-group";
 import clsx from "clsx";
-import LocailzedLink from "./LocalizedLink";
+import LocailzedLink from "./localized-link";
 import { useSelectedLayoutSegment } from "next/navigation";
 
 export const Tab = ({ path, item }: { path: string; item: Item }) => {

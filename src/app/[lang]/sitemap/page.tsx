@@ -1,8 +1,8 @@
 "use client";
 
-import LocailzedLink from "@/components/LocalizedLink";
+import LocailzedLink from "@/components/localized-link";
 import { contentItems } from "@/lib/content";
-import { LocalizedText as t } from "@/context/languageContext";
+import { LocalizedText as t } from "@/context/language-context";
 
 export default function About() {
   return (

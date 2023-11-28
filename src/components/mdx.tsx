@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Slideshow from "./slideshow";
 import { useMDXComponent } from "next-contentlayer/hooks";
-import LocailzedLink from "./LocalizedLink";
+import LocailzedLink from "./localized-link";
 
 const CustomLink = (props: any) => {
   const href = props.href;
