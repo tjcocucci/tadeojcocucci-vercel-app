@@ -24,22 +24,20 @@ export function LanguageProvider({
   children: React.ReactNode;
   locale: string;
 }) {
-  const [userLanguage, setUserLanguage] = useState<Locale>(locale as Locale);
   const [dictionary, setDictionary] = useState<Record<string, string>>({});
   const pathName = usePathname();
   const router = useRouter();
 
   useEffect(() => {
     async function fetchDictionary() {
-      getDictionary(userLanguage)
+      getDictionary(locale as Locale)
         .then((dict) => dict && setDictionary(dict))
         .catch((err) => console.error(err));
     }
     fetchDictionary();
-  }, [userLanguage]);
+  }, []);
 
   const userLanguageChange = async (selected: Locale) => {
-    // setUserLanguage(selected);
     // const dict = await getDictionary(selected);
     // setDictionary(dict || {});
 
@@ -52,9 +50,9 @@ export function LanguageProvider({
   };
 
   const provider = {
-    userLanguage,
-    dictionary,
-    userLanguageChange,
+    userLanguage: locale,
+    dictionary: dictionary,
+    userLanguageChange: userLanguageChange,
   };
 
   return (
