@@ -5,7 +5,7 @@ import ThemeSwitcher from "./theme-switcher";
 
 export function NavBar() {
   return (
-    <div className="sticky top-0 p-4 bg-[#1e1e1e] border-white/30 border-solid border-b-2">
+    <div className="sticky top-0 p-4 dark:bg-[#1e1e1e] bg-neutral-200 border-white/30 dark:border-gray-600 border-solid border-b-2">
       <div className="flex flex-row justify-between">
         {" "}
         <LocalizedLink

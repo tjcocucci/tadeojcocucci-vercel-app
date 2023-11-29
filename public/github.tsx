@@ -1,7 +1,6 @@
 export default function GitHubIcon({
   width = 24,
   height = 24,
-  color = "#0F0F0F",
 }) {
   return (
     <svg
@@ -10,7 +9,6 @@ export default function GitHubIcon({
       height={height}
       viewBox={`-2 -2 ${width} ${height}`}
       version="1.1"
-      fill={color}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0" />
 
@@ -26,16 +24,12 @@ export default function GitHubIcon({
         <defs> </defs>{" "}
         <g
           id="Page-1"
-          stroke="none"
           strokeWidth="1"
-          fill="none"
-          fillRule="evenodd"
         >
           {" "}
           <g
             id="Dribbble-Light-Preview"
             transform="translate(-140.000000, -7559.000000)"
-            fill={color}
           >
             {" "}
             <g id="icons" transform="translate(56.000000, 160.000000)">

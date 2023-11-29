@@ -42,7 +42,7 @@ export default function RootLayout({
     <html lang={params.lang} className={clsx(inter.className)}>
       <ThemeProvider>
         <LanguageProvider locale={params.lang}>
-          <body className="text-gray-800 bg-white dark:text-gray-400 dark:bg-[#1e1e1e]">
+          <body className="text-gray-800 bg-neutral-200 dark:text-gray-400 dark:bg-[#1e1e1e]">
             <div className="w-2/3 mx-auto">
               <NavBar />
               <div className="flex flex-row items-start mx-auto h-screen">

@@ -1,12 +1,9 @@
 "use client";
 
 import { contentItems, type Item } from "../lib/content";
-import { Profile } from "./profile";
 import { useSelectedLayoutSegment } from "next/navigation";
-// import { MenuAlt2Icon, XIcon } from '@heroicons/react/solid';
 import clsx from "clsx";
 import { useState } from "react";
-import LocaleSwitcher from "@/components/locale-switcher";
 import { LocalizedText as t } from "@/context/language-context";
 import LocalizedLink from "./localized-link";
 
@@ -21,7 +18,7 @@ export function Menu() {
         {contentItems.map((section) => {
           return (
             <div key={section.name}>
-              <div className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-gray-400/80">
+              <div className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-gray-800 dark:text-gray-200 fill-gray-800 dark:fill-gray-200">
                 <div>{t(section.name)}</div>{" "}
               </div>
 
@@ -53,7 +50,7 @@ function GlobalNavItem({
       onClick={close}
       href={`/${item.slug}`}
       className={clsx(
-        "block rounded-md px-3 py-2 text-sm font-medium hover:text-gray-300",
+        "block rounded-md px-3 py-2 text-sm font-medium hover:bg-neutral-300 text-gray-800 hover:dark:bg-gray-800 dark:text-gray-200 fill-gray-800 dark:fill-gray-200",
         {
           "text-gray-400 hover:bg-gray-800": !isActive,
           "text-white": isActive,

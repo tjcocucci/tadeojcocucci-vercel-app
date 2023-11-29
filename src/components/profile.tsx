@@ -29,22 +29,28 @@ export function ProfileCard() {
             <Profile />
           </div>
           <div className="flex flex-col w-2/3 self-start">
-            <p className="w-full callout text-lg mb-0 font-medium text-gray-200">
+            <p className="w-full callout text-lg mb-0 font-medium text-gray-800 dark:text-gray-200">
               Tadeo Javier Cocucci
             </p>
-            <p className="w-full callout mb-8 mt-0 text-sm text-gray-400 line-clamp-3">
+            <p className="w-full callout mb-8 mt-0 text-sm dark:text-gray-400 text-gray-600 line-clamp-3">
               {t("computerSciencesphd")}
             </p>
           </div>
         </div>
         <div className="block">
-          <p className="flex items-center space-x-2 align-baseline my-1.5">
-            <MailIcon color="white" />
-            <a href="mailto:tadeojcocucci@gmail.com">tadeojcocucci@gmail.com</a>
-          </p>
-          <p className="flex items-center space-x-2 align-baseline my-1.5">
-            <GitHubIcon color="white" />
+          <p className="flex items-center space-x-2 align-baseline my-1.5 text-gray-800 dark:text-gray-200 fill-gray-800 dark:fill-gray-200">
+            <MailIcon />
             <a
+              className="text-gray-800 dark:text-gray-200"
+              href="mailto:tadeojcocucci@gmail.com"
+            >
+              tadeojcocucci@gmail.com
+            </a>
+          </p>
+          <p className="flex items-center space-x-2 align-baseline my-1.5 text-gray-800 dark:text-gray-200 fill-gray-800 dark:fill-gray-200">
+            <GitHubIcon />
+            <a
+              className="text-gray-800 dark:text-gray-200"
               href="https://github.com/tjcocucci"
               target="_blank"
               rel="noopener noreferrer"
@@ -52,9 +58,10 @@ export function ProfileCard() {
               github
             </a>
           </p>
-          <p className="flex items-center space-x-2 align-baseline my-1.5">
-            <LinkedInIcon color="white" />
+          <p className="flex items-center space-x-2 align-baseline my-1.5 text-gray-800 dark:text-gray-200 fill-gray-800 dark:fill-gray-200">
+            <LinkedInIcon />
             <a
+              className="text-gray-800 dark:text-gray-200"
               href="https://linkedin.com/in/tjcocucci/"
               target="_blank"
               rel="noopener noreferrer"
