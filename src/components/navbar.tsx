@@ -1,6 +1,7 @@
 import { Profile } from "./profile";
 import LocaleSwitcher from "@/components/locale-switcher";
 import LocalizedLink from "./localized-link";
+import ThemeSwitcher from "./theme-switcher";
 
 export function NavBar() {
   return (
@@ -19,7 +20,10 @@ export function NavBar() {
             Tadeo Javier Cocucci
           </h3>
         </LocalizedLink>
-        <LocaleSwitcher />
+        <div className="flex flex-row space-x-6 align-middle">
+          <ThemeSwitcher />
+          <LocaleSwitcher />
+        </div>
       </div>
     </div>
   );
