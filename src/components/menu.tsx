@@ -43,7 +43,6 @@ function GlobalNavItem({
   close: () => false | void;
 }) {
   const segments = useSelectedLayoutSegments();
-  console.log(segments, item.slug);
   const isActive = segments.join('/').includes(item.slug);
 
   return (
