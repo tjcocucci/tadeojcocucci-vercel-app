@@ -28,8 +28,8 @@ export function Slideshow({ images }) {
   firstIndex = Math.max(lastIndex - 4, 0);
 
   return (
-    <div className="Slideshow">
-      <div className="flex flex-col h-96 w-full relative bg-gray-600 rounded-2xl mb-4">
+    <div className="mx-auto max-w-[400px]">
+      <div className="flex flex-col h-96 relative bg-gray-600 rounded-2xl mb-4">
         <Image
           className="lazy mb-0 mt-0 rounded-t-2xl"
           src={images[currentIndex].url}

@@ -23,25 +23,46 @@ export function Profile({ width }: { width?: number }) {
 export function ProfileCard() {
   return (
     <Card>
-      <div className="flex items-center w-150 mr-4">
-        <Profile />
-        <MailIcon />
-      </div>
-      <div className="block">
-        <p className="w-full callout text-lg mb-0">Tadeo Javier Cocucci</p>
-        <p className="w-full callout mb-8 mt-0">{t("computerSciencesphd")}</p>
-        <p className="flex items-center space-x-2 mb">
-          <MailIcon color="white" />
-          <a href="mailto:tadeojcocucci@gmail.com">tadeojcocucci@gmail.com</a>
-        </p>
-        <p className="flex items-center space-x-2">
-          <GitHubIcon color="white" />
-          <a href="https://github.com/tjcocucci" target="_blank" rel="noopener noreferrer">github</a>
-        </p>
-        <p className="flex items-center space-x-2 align-baseline">
-          <LinkedInIcon color="white" />
-          <a href="https://linkedin.com/in/tjcocucci/" target="_blank" rel="noopener noreferrer">linkedin</a>
-        </p>
+      <div>
+        <div className="flex items-center w-150 space-x-4">
+          <div className="w-1/3">
+            <Profile />
+          </div>
+          <div className="flex flex-col w-2/3 self-start">
+            <p className="w-full callout text-lg mb-0 font-medium text-gray-200">
+              Tadeo Javier Cocucci
+            </p>
+            <p className="w-full callout mb-8 mt-0 text-sm text-gray-400 line-clamp-3">
+              {t("computerSciencesphd")}
+            </p>
+          </div>
+        </div>
+        <div className="block">
+          <p className="flex items-center space-x-2 align-baseline my-1.5">
+            <MailIcon color="white" />
+            <a href="mailto:tadeojcocucci@gmail.com">tadeojcocucci@gmail.com</a>
+          </p>
+          <p className="flex items-center space-x-2 align-baseline my-1.5">
+            <GitHubIcon color="white" />
+            <a
+              href="https://github.com/tjcocucci"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github
+            </a>
+          </p>
+          <p className="flex items-center space-x-2 align-baseline my-1.5">
+            <LinkedInIcon color="white" />
+            <a
+              href="https://linkedin.com/in/tjcocucci/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin
+            </a>
+          </p>
+        </div>
       </div>
     </Card>
   );
