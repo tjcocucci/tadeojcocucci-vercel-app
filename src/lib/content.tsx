@@ -9,8 +9,8 @@ export const contentItems: { name: string; items: Item[] }[] = [
     name: "aboutMe",
     items: [
       {
-        name: "hello",
-        slug: "about/hello",
+        name: "whoami",
+        slug: "about",
         description: "aboutMeDescription",
       },
       {

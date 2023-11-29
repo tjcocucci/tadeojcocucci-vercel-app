@@ -8,12 +8,11 @@ import MoonIcon from "public/moon";
 export default function ThemeSwitcher() {
   const { theme, toggleTheme } = useContext(ThemeContext);
   return (
-    <button onClick={toggleTheme}>
-      {theme === "light" ? (
-        <MoonIcon color="black" />
-      ) : (
-        <SunIcon color="white" />
-      )}
+    <button
+      className="rounded-3xl p-2 hover:bg-neutral-300 hover:dark:bg-gray-800 fill-gray-800 dark:fill-gray-200"
+      onClick={toggleTheme}
+    >
+      {theme === "light" ? <MoonIcon /> : <SunIcon />}
     </button>
   );
 }

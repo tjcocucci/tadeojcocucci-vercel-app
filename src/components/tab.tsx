@@ -18,10 +18,10 @@ export const Tab = ({ path, item }: { path: string; item: Item }) => {
   return (
     <LocailzedLink
       href={href}
-      className={clsx("rounded-lg px-3 py-1 text-sm font-medium", {
-        "bg-gray-700 text-gray-100 hover:bg-gray-500 hover:text-white":
+      className={clsx("rounded-lg px-3 py-1 text-sm font-medium hover:bg-gray-500 dark:text-gray-200", {
+        "bg-gray-700 text-gray-100  hover:text-white":
           !isActive,
-        "bg-vercel-blue text-white": isActive,
+        "border-2 border-gray-200": isActive,
       })}
     >
       {item.text}

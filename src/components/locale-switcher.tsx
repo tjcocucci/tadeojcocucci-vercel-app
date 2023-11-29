@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useContext } from "react";
 import { LanguageContext } from "@/context/language-context";
 import { i18n, Locale } from "@/../i18n-config";
@@ -16,18 +16,25 @@ export default function LocaleSwitcher() {
 
   return (
     <div className="flex flex-row space-x-2">
-      {Object.entries(i18n.locales).map(([id, name]) => (
-        <button
-          className={clsx("rounded-lg px-3 py-1 text-sm font-medium", {
-            "bg-gray-700 text-gray-100 hover:bg-gray-500 hover:text-white":
-              name !== userLanguage,
-            "bg-vercel-blue text-white": name === userLanguage,
-          })}
-          key={id}
-          onClick={() => handleLanguageChange(name)}
-        >
-          {name}
-        </button>
+      {Object.entries(i18n.locales).map(([id, name], index) => (
+        <>
+          <button
+            className={clsx(
+              "rounded-md px-3 py-2 text-sm font-medium hover:bg-neutral-300 text-gray-800 hover:dark:bg-gray-800 dark:text-gray-200 fill-gray-800 dark:fill-gray-200",
+              {
+                "text-gray-400 hover:bg-gray-800": name !== userLanguage,
+                "border-2 border-gray-200 text-white": name === userLanguage,
+              },
+            )}
+            key={id}
+            onClick={() => handleLanguageChange(name)}
+          >
+            {name}
+          </button>
+          <span key={id} className="text-gray-400 py-2 font-extrabold">
+            {index !== i18n.locales.length - 1 ? " | " : ""}
+          </span>
+        </>
       ))}
     </div>
   );
