@@ -29,19 +29,19 @@ export function Slideshow({ images }) {
 
   return (
     <div className="mx-auto max-w-[400px]">
-      <div className="flex flex-col h-96 relative bg-gray-600 rounded-2xl mb-4">
+      <div className="flex flex-col h-96 relative rounded-xl dark:bg-gray-800 bg-neutral-200 0 mb-4 text-gray-800 dark:text-gray-200">
         <Image
-          className="lazy mb-0 mt-0 rounded-t-2xl"
+          className="lazy mb-0 mt-0 rounded-t-xl"
           src={images[currentIndex].url}
           alt="sample"
           width="400"
           height="400"
         />
-        <p className="text-center px-2">{images[currentIndex].caption}</p>
+        <p className="text-left px-8">{images[currentIndex].caption}</p>
       </div>
       <div className="flex flex-row flex-nowrap items-center gap-5 justify-center">
         <button
-          className="text-white hover:bg-slate-100 hover:text-black border-1 rounded-3xl px-2 py-1 w-10"
+          className="hover:bg-slate-100 hover:text-black border-1 rounded-3xl px-2 py-1 w-10"
           onClick={back}
         >
           {"<"}
@@ -50,7 +50,7 @@ export function Slideshow({ images }) {
         {images.slice(firstIndex, lastIndex + 1).map((image, index) => (
           <button
             key={index + firstIndex}
-            className={`text-white hover:bg-slate-100 hover:text-black w-full rounded-3xl
+            className={`hover:bg-slate-100 hover:text-black w-full rounded-3xl
             ${currentIndex === index + firstIndex ? "bg-slate-400/20 " : ""}`}
             onClick={() => goto(index + firstIndex)}
           >
@@ -59,7 +59,7 @@ export function Slideshow({ images }) {
         ))}
         {lastIndex < images.length - 1 ? <span>...</span> : null}
         <button
-          className="text-white hover:bg-slate-100 hover:text-black border-1 rounded-3xl px-2 py-1 w-10"
+          className="hover:bg-slate-100 hover:text-black border-1 rounded-3xl px-2 py-1 w-10"
           onClick={next}
         >
           {">"}
@@ -69,12 +69,11 @@ export function Slideshow({ images }) {
   );
 }
 
-export default Slideshow;
+// className={clsx(
+//   "block rounded-md px-3 py-2 text-sm font-medium hover:bg-neutral-300 text-gray-800 hover:dark:bg-gray-800 dark:text-gray-200 fill-gray-800 dark:fill-gray-200",
+//   {
+//     "text-gray-400 hover:bg-gray-800": !isActive,
+//     "italic": isActive,
+//   },
 
-function Slide({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="w-full flex flex-row overflow-x-scroll snap-x snap-mandatory">
-      {children}
-    </div>
-  );
-}
+export default Slideshow;
