@@ -23,7 +23,7 @@ export default function LocaleSwitcher() {
               "rounded-md px-3 py-2 text-sm font-medium hover:bg-neutral-300 text-gray-800 hover:dark:bg-gray-800 dark:text-gray-200 fill-gray-800 dark:fill-gray-200",
               {
                 "text-gray-400 hover:bg-gray-800": name !== userLanguage,
-                "border-2 border-gray-200 text-white": name === userLanguage,
+                "border-2 dark:border-gray-200 border-neutral-400": name === userLanguage,
               },
             )}
             key={id}

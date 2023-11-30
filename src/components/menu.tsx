@@ -53,7 +53,7 @@ function GlobalNavItem({
         "block rounded-md px-3 py-2 text-sm font-medium hover:bg-neutral-300 text-gray-800 hover:dark:bg-gray-800 dark:text-gray-200 fill-gray-800 dark:fill-gray-200",
         {
           "text-gray-400 hover:bg-gray-800": !isActive,
-          "text-white italic": isActive,
+          "italic": isActive,
         },
       )}
     >
