@@ -29,7 +29,7 @@ export function Slideshow({ images }) {
 
   return (
     <div className="mx-auto max-w-[400px]">
-      <div className="flex flex-col h-96 relative rounded-xl dark:bg-gray-800 bg-neutral-200 0 mb-4 text-gray-800 dark:text-gray-200">
+      <div className="flex flex-col h-80 relative rounded-xl dark:bg-gray-800 bg-neutral-200 0 mb-4 text-gray-800 dark:text-gray-200">
         <Image
           className="lazy mb-0 mt-0 rounded-t-xl"
           src={images[currentIndex].url}
@@ -37,7 +37,7 @@ export function Slideshow({ images }) {
           width="400"
           height="400"
         />
-        <p className="text-left px-8">{images[currentIndex].caption}</p>
+        <p className="text-left text-xs px-8">{images[currentIndex].caption}</p>
       </div>
       <div className="flex flex-row flex-nowrap items-center gap-5 justify-center">
         <button

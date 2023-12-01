@@ -28,5 +28,7 @@
   "homeDescription": "Página de inicio",
   "notFound": "No encontrado",
   "computerSciencesphd": "Doctor en Ciencias de la Computación",
-  "whoami": "¿Quién soy?"
+  "whoami": "¿Quién soy?",
+  "teacher": "Profesor",
+  "softwareDeveloper": "Desarrollador de software"
 }

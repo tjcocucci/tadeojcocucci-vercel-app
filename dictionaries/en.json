@@ -28,5 +28,7 @@
   "homeDescription": "Homepage",
   "notFound": "Not Found",
   "computerSciencesphd": "Computer Sciences PhD",
-  "whoami": "Who am I?"
+  "whoami": "Who am I?",
+  "teacher": "Teacher",
+  "softwareDeveloper": "Software Developer"
 }

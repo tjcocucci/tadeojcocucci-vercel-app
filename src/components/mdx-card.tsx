@@ -23,7 +23,7 @@ export function MdxCard({
   }
   return (
     <div className="space-y-4">
-      <h1 className="text-3xl font-medium text-gray-400/80">{card.title}</h1>
+      <h1 className="text-2xl font-medium dark:text-gray-200 text-gray-800">{card.title}</h1>
       <br />
       <Mdx code={card.body.code} />
     </div>

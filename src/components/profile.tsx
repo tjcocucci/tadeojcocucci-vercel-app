@@ -32,8 +32,14 @@ export function ProfileCard() {
             <p className="w-full callout text-lg mb-0 font-medium text-gray-800 dark:text-gray-200">
               Tadeo Javier Cocucci
             </p>
-            <p className="w-full callout mb-8 mt-0 text-sm dark:text-gray-400 text-gray-600 line-clamp-3">
+            <p className="w-full callout mt-2 mb-0 text-sm dark:text-gray-400 text-gray-600 line-clamp-3">
               {t("computerSciencesphd")}
+            </p>
+            <p className="w-full callout mt-2 mb-0 text-sm dark:text-gray-400 text-gray-600 line-clamp-3">
+              {t("softwareDeveloper")}
+            </p>
+            <p className="w-full callout mt-2 mb-0 text-sm dark:text-gray-400 text-gray-600 line-clamp-3">
+              {t("teacher")}
             </p>
           </div>
         </div>
