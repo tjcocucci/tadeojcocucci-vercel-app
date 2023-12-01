@@ -42,14 +42,23 @@ export default function RootLayout({
       <ThemeProvider>
         <LanguageProvider locale={params.lang}>
           <body className="text-gray-800 bg-neutral-200 dark:text-gray-400 dark:bg-[#1e1e1e]">
-            <div className="w-2/3 mx-auto">
-              <NavBar />
-              <div className="flex flex-row items-start mx-auto h-screen">
-                <Menu />
-                <div className="w-2/3">
+            <div className="md:w-2/3 md:mx-auto w-full">
+
+              {/* Top NavBar */}
+              <div className="w-full">
+                <NavBar />
+              </div>
+              
+              {/* Menu and Main */}
+              <div className="flex md:flex-row flex-col md:items-start mx-auto h-fit items-center">
+                <div className="md:ml-8 md:w-fit w-full md:min-w-[20%]">
+                  <Menu />
+                </div>
+                <div className="md:w-full w-11/12 mt-4">
                   <MainCard>{children}</MainCard>
                 </div>
               </div>
+
             </div>
           </body>
         </LanguageProvider>

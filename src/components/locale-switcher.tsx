@@ -26,7 +26,7 @@ export default function LocaleSwitcher() {
                 "border-2 dark:border-gray-200 border-neutral-400": name === userLanguage,
               },
             )}
-            key={id}
+            key={name}
             onClick={() => handleLanguageChange(name)}
           >
             {name}

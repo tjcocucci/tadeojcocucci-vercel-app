@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: #47a3f3;
+  background-color: #5880a3;
   color: #fefefe;
 }
 
 html {
+  width: 100%;
+  height: fit-content;
   min-width: 360px;
 }
 
