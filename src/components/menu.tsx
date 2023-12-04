@@ -14,8 +14,10 @@ export function Menu() {
   const close = () => setIsOpen(false);
 
   return (
-    <nav className="md:px-2 py-5 border-b md:border-b-0">
-      <div className="md:hidden fill-gray-800 dark:fill-gray-200 px-6">
+    <nav className={clsx("flex md:px-2 border-b dark:border-gray-600/50 border-neutral-400/50 md:border-b-0",
+      { "pb-2": isOpen,}
+    )}>
+      <div className="md:hidden fill-gray-800 dark:fill-gray-200 stroke-none p-6 align-bottom">
         {isOpen ? (
           <button onClick={() => setIsOpen(false)} className="w-6 h-6">
             <CloseIcon />
@@ -29,14 +31,14 @@ export function Menu() {
 
       {/* <div className="hidden md:flex md:flex-col md:space-y-6"> */}
       <div
-        className={clsx("md:flex md:flex-col md:space-y-6", {
+        className={clsx("md:flex md:flex-col md:space-y-6 pt-6", {
           hidden: !isOpen,
-          "flex flex-wrap": isOpen,
+          "grid grid-cols-2 place-items-start gap-x-4": isOpen,
         })}
       >
         {contentItems.map((section) => {
           return (
-            <div key={section.name}>
+            <div key={section.name} className="flex flex-col">
               <div className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-gray-800 dark:text-gray-200 fill-gray-800 dark:fill-gray-200">
                 <div>{t(section.name)}</div>{" "}
               </div>

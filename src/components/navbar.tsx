@@ -12,11 +12,11 @@ export function NavBar() {
           href="/"
           className="group flex w-full items-center gap-x-2.5"
         >
-          <div className="h-7 w-7 rounded-full border border-white/30 group-hover:border-white/50">
+          <div className="rounded-full border border-white/30 group-hover:border-white/50">
             <Profile width={40} />
           </div>
 
-          <h3 className="font-semibold tracking-wide group-hover:text-gray-50">
+          <h3 className="font-semibold tracking-wide group-hover:text-gray-50 text-sm md:text-base">
             Tadeo Javier Cocucci
           </h3>
         </LocalizedLink>
