@@ -2,8 +2,8 @@
 import Image from "next/image";
 import profilePic from "../../public/profile.jpg";
 import { Card } from "./card";
-import MailIcon from "public/mail";
-import GitHubIcon from "public/github";
+import MailIcon from "public/svg-icons/mail";
+import GitHubIcon from "public/svg-icons/github";
 import LinkedInIcon from "public/linkedin";
 import { LocalizedText as t } from "@/context/language-context";
 

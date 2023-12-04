@@ -6,8 +6,8 @@ import clsx from "clsx";
 import { useState } from "react";
 import { LocalizedText as t } from "@/context/language-context";
 import LocalizedLink from "./localized-link";
-import MenuIcon from "public/menu";
-import CloseIcon from "public/close";
+import MenuIcon from "public/svg-icons/menu";
+import CloseIcon from "public/svg-icons/close";
 
 export function Menu() {
   const [isOpen, setIsOpen] = useState(false);

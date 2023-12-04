@@ -19,7 +19,7 @@ export default function Page() {
   return (
     <div className="space-y-4">
       <h1 className="text-2xl font-medium dark:text-gray-200 text-gray-800">{cv.title}</h1>
-      <p className="text-xs text-gray-400/80">
+      <p className="text-xs dark:text-gray-200/80 text-gray-1000/80">
         {t("lastUpdate")} {format(parseISO(date), "d MMM, y")}
       </p>
       <hr className="border-gray-700 dark:border-gray-200" />

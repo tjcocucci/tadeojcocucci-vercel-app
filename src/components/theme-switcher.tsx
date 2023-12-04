@@ -2,8 +2,8 @@
 
 import React, { useContext } from "react";
 import { ThemeContext } from "@/context/theme-provider";
-import SunIcon from "public/sun";
-import MoonIcon from "public/moon";
+import SunIcon from "public/svg-icons/sun";
+import MoonIcon from "public/svg-icons/moon";
 
 export default function ThemeSwitcher() {
   const { theme, toggleTheme } = useContext(ThemeContext);
