@@ -1,7 +1,7 @@
 export default function MenuIcon({ width = 24, height = 24 }) {
   return (
     <svg viewBox={`0 0 ${width} ${height}`} width={width} height={height}>
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
         strokeLinecap="round"
