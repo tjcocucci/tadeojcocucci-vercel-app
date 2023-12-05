@@ -18,16 +18,16 @@ const serverComponents = softwareTools.map((category) => {
 
 export default function SoftwareToolsCard() {
   return (
-    <div className="flex flex-wrap items-start">
+    <div className="flex flex-wrap items-start gap-x-4 sm:gap-x-0 justify-around">
       {serverComponents.map((category) => {
         return category.map(({ categoryName, tools }) => {
           return (
-            <div key={categoryName} className="w-full">
-              <p className="w-full callout text-lg mb-0 font-medium text-gray-800 dark:text-gray-200">
+            <div key={categoryName} className="sm:w-full w-2/5">
+              <p className="w-full callout text-base mb-0 font-medium text-gray-800 dark:text-gray-200">
                 {t(categoryName)}
               </p>
               <div className="flex flex-wrap items-center w-full">
-                {tools.map(({ Icon, title, description, link }) => {
+                {tools.map(({ Icon, title, link }) => {
                   return (
                     <a
                       key={title}

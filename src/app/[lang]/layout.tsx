@@ -42,7 +42,7 @@ export default function RootLayout({
       <ThemeProvider>
         <LanguageProvider locale={params.lang}>
           <body className="text-gray-800 bg-neutral-200 dark:text-gray-400 dark:bg-[#1e1e1e]">
-            <div className="md:w-2/3 md:mx-auto w-full">
+            <div className="max-w-4xl md:mx-auto w-full">
 
               {/* Top NavBar */}
               <div className="w-full">
