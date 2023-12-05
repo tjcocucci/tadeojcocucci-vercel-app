@@ -1,6 +1,6 @@
-export default function CloseIcon({ width = 24, height = 24 }) {
+export default function JavaScriptIcon({ width = 24, height = 24 }) {
   return (
-    <svg viewBox={`0 0 ${width} ${height}`} width={width} height={height}>
+    <svg viewBox={`0 0 128 128`} width={width} height={height}>
       <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z" />
       <path
         fill="#323330"

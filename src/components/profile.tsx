@@ -6,6 +6,7 @@ import MailIcon from "public/svg-icons/mail";
 import GitHubIcon from "public/svg-icons/github";
 import LinkedInIcon from "public/linkedin";
 import { LocalizedText as t } from "@/context/language-context";
+import SoftwareToolsCard from "./software-tools-card";
 
 export function Profile({ width }: { width?: number }) {
   return (
@@ -42,6 +43,7 @@ export function ProfileCard() {
               {t("teacher")}
             </p>
           </div>
+          <SoftwareToolsCard />
         </div>
         <div className="block">
           <p className="flex items-center space-x-2 align-baseline my-1.5 text-gray-800 dark:text-gray-200 fill-gray-800 dark:fill-gray-200">

@@ -31,5 +31,9 @@
   "whoami": "Who am I?",
   "teacher": "Teacher",
   "softwareDeveloper": "Software Developer",
-  "lastUpdate": "Last update"
+  "lastUpdate": "Last update",
+  "webDev": "Web Dev",
+  "dataScience": "Data Science",
+  "gameDev": "Game Dev",
+  "generalTools": "General Tools"
 }
