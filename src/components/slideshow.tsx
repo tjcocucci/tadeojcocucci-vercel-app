@@ -5,6 +5,27 @@ import Image from "next/image";
 
 export function Slideshow({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const touchRef = useRef({
+    startX: 0,
+    endX: 0,
+  });
+
+  const handleTouchStart = (event) => {
+    touchRef.current.startX = event.touches[0].clientX;
+  };
+
+  const handleTouchMove = (event) => {
+    touchRef.current.endX = event.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const diffX = touchRef.current.endX - touchRef.current.startX;
+    if (diffX > 50) {
+      back();
+    } else if (diffX < -50) {
+      next();
+    }
+  };
 
   const back = () => {
     setCurrentIndex((prevIndex) =>
@@ -29,7 +50,12 @@ export function Slideshow({ images }) {
 
   return (
     <div className="mx-auto max-w-[400px]">
-      <div className="flex flex-col h-80 relative rounded-xl dark:bg-gray-800 bg-neutral-200 0 mb-4 text-gray-800 dark:text-gray-200">
+      <div
+        className="flex flex-col h-80 relative rounded-xl dark:bg-gray-800 bg-neutral-200 0 mb-4 text-gray-800 dark:text-gray-200"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <Image
           className="lazy mb-0 mt-0 rounded-t-xl"
           src={images[currentIndex].url}
@@ -68,12 +94,5 @@ export function Slideshow({ images }) {
     </div>
   );
 }
-
-// className={clsx(
-//   "block rounded-md px-3 py-2 text-sm font-medium hover:bg-neutral-300 text-gray-800 hover:dark:bg-gray-800 dark:text-gray-200 fill-gray-800 dark:fill-gray-200",
-//   {
-//     "text-gray-400 hover:bg-gray-800": !isActive,
-//     "italic": isActive,
-//   },
 
 export default Slideshow;
