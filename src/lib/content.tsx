@@ -15,7 +15,7 @@ export const contentItems: { name: string; items: Item[] }[] = [
       },
       {
         name: "cv",
-        slug: "cv",
+        slug: "cv-page",
         description: "cvDescription",
       },
     ],
