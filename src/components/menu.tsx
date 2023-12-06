@@ -11,7 +11,6 @@ import CloseIcon from "public/svg-icons/close";
 
 export function Menu() {
   const [isOpen, setIsOpen] = useState(false);
-  const close = () => setIsOpen(false);
 
   return (
     <nav className={clsx("flex md:px-2 border-b dark:border-gray-600/50 border-neutral-400/50 md:border-b-0",
