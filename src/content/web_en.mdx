@@ -13,6 +13,6 @@ I built this site with
 
 The site's content is written in <CustomLink href="https://mdxjs.com/">MDX</CustomLink> and embedded as React components by using <CustomLink href="https://contentlayer.dev/">Contentlayer</CustomLink>.
 
-To style the site, I used <CustomLink href="https://tailwindcss.com/">Tailwind CSS</CustomLink> and implemented dark and light mode by combining Tailwind's functionality with React's Context.
+To style the site, I used <CustomLink href="https://tailwindcss.com/">Tailwind CSS</CustomLink> and implemented dark and light mode by combining Tailwind's functionality with React's Context. Tailwind's utilities also allowed me to create a responsive layout.
 
-The site supports two languages (Spanish and English), which I achieved by using <CustomLink href="https://www.i18next.com/">i18next</CustomLink> and again a Context Provider.
+The site supports two languages (Spanish and English), which I achieved by using <CustomLink href="https://www.i18next.com/">i18next</CustomLink> and again a Context Provider. The URL prepends the current language code, which is achieved by customizing Next.js' `middleware.ts`.
