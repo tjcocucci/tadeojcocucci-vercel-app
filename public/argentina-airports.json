@@ -1,69 +1,1047 @@
 {
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-                                                                                
-"features": [
-{ "type": "Feature", "properties": { "gid": 32, "entidad": 0, "fna": "Aeropuerto Astor Piazzolla", "gna": "Aeropuerto", "nam": "Astor Piazzolla", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -57.581535323999958, -37.93323406899998 ] } },
-{ "type": "Feature", "properties": { "gid": 65, "entidad": 0, "fna": "Aeropuerto Suboficial Ayudante Santiago Germano", "gna": "Aeropuerto", "nam": "Suboficial Ayudante Santiago Germano", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -68.400629998999989, -34.591288481999982 ] } },
-{ "type": "Feature", "properties": { "gid": 72, "entidad": 0, "fna": "Aeropuerto Comodoro Juan José Pierrestegui", "gna": "Aeropuerto", "nam": "Comodoro Juan José Pierrestegui", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -58.002245734999974, -31.302628542999969 ] } },
-{ "type": "Feature", "properties": { "gid": 75, "entidad": 0, "fna": "Aeropuerto Río Cuarto", "gna": "Aeropuerto", "nam": "Río Cuarto", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -64.277812532999974, -33.096018283999967 ] } },
-{ "type": "Feature", "properties": { "gid": 87, "entidad": 0, "fna": "Aeropuerto General Justo José de Urquiza", "gna": "Aeropuerto", "nam": "General Justo José de Urquiza", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -60.483907071999965, -31.78956498499997 ] } },
-{ "type": "Feature", "properties": { "gid": 102, "entidad": 0, "fna": "Aeropuerto Internacional Ingeniero Aeronáutico Ambrosio Taravella - Pajas Blancas", "gna": "Aeropuerto Internacional", "nam": "Ingeniero Aeronáutico Ambrosio Taravella - Pajas Blancas", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -64.213720914999953, -31.315574496999943 ] } },
-{ "type": "Feature", "properties": { "gid": 151, "entidad": 0, "fna": "Aeropuerto Internacional Valle del Conlara", "gna": "Aeropuerto Internacional", "nam": "Valle del Conlara", "fun": -1.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -65.179973211999936, -32.380455948999952 ] } },
-{ "type": "Feature", "properties": { "gid": 206, "entidad": 0, "fna": "Aeroparque Jorge Newbery", "gna": "Aeroparque", "nam": "Jorge Newbery", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -58.412270465999939, -34.557494892999955 ] } },
-{ "type": "Feature", "properties": { "gid": 209, "entidad": 0, "fna": "Aeropuerto Héroes de Malvinas", "gna": "Aeropuerto", "nam": "Héroes de Malvinas", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -59.234037043999933, -37.241161377999958 ] } },
-{ "type": "Feature", "properties": { "gid": 214, "entidad": 0, "fna": "Aeropuerto La Plata", "gna": "Aeropuerto", "nam": "La Plata", "fun": -1.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -57.895412875999966, -34.965492935999976 ] } },
-{ "type": "Feature", "properties": { "gid": 219, "entidad": 0, "fna": "Aeropuerto El Palomar", "gna": "Aeropuerto", "nam": "El Palomar", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -58.600178409999955, -34.605361160999962 ] } },
-{ "type": "Feature", "properties": { "gid": 221, "entidad": 0, "fna": "Aeropuerto General Pico", "gna": "Aeropuerto", "nam": "General Pico", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -63.758281279999949, -35.689304166999932 ] } },
-{ "type": "Feature", "properties": { "gid": 240, "entidad": 0, "fna": "Aeropuerto Internacional Ministro Pistarini", "gna": "Aeropuerto Internacional", "nam": "Ministro Pistarini", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -58.539235679999933, -34.812505900999952 ] } },
-{ "type": "Feature", "properties": { "gid": 242, "entidad": 0, "fna": "Aeropuerto Santa Rosa", "gna": "Aeropuerto", "nam": "Santa Rosa", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -64.279425211999978, -36.59183313099993 ] } },
-{ "type": "Feature", "properties": { "gid": 265, "entidad": 0, "fna": "Aeropuerto Primer Teniente Jorge Eduardo Casco", "gna": "Aeropuerto", "nam": "Primer Teniente Jorge Eduardo Casco", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -60.486090618999981, -26.748926971999936 ] } },
-{ "type": "Feature", "properties": { "gid": 274, "entidad": 0, "fna": "Aeropuerto Comandante Armando Tola", "gna": "Aeropuerto", "nam": "Comandante Armando Tola", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -72.053794948999951, -50.283902315999967 ] } },
-{ "type": "Feature", "properties": { "gid": 294, "entidad": 0, "fna": "Aeropuerto Villa Reynolds", "gna": "Aeropuerto", "nam": "Villa Reynolds", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -65.376983006999978, -33.720130369999936 ] } },
-{ "type": "Feature", "properties": { "gid": 313, "entidad": 0, "fna": "Aeropuerto Villa Gesell", "gna": "Aeropuerto", "nam": "Villa Gesell", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -57.020960108999986, -37.234488708999947 ] } },
-{ "type": "Feature", "properties": { "gid": 368, "entidad": 0, "fna": "Aeropuerto Regional Presidente Néstor Carlos Kirchner", "gna": "Aeropuerto Regional", "nam": "Presidente Néstor Carlos Kirchner", "fun": -1.000000, "fdc": "IGN\/ANAC\/Street View", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -63.230949014999965, -32.327317285999982 ] } },
-{ "type": "Feature", "properties": { "gid": 380, "entidad": 0, "fna": "Aeropuerto Internacional San Fernando", "gna": "Aeropuerto Internacional", "nam": "San Fernando", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -58.583998752999946, -34.455847985999981 ] } },
-{ "type": "Feature", "properties": { "gid": 427, "entidad": 0, "fna": "Aeropuerto 28 de Noviembre", "gna": "Aeropuerto", "nam": "28 de Noviembre", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -72.227765895999937, -51.604062279999937 ] } },
-{ "type": "Feature", "properties": { "gid": 428, "entidad": 0, "fna": "Aeropuerto Internacional General Enrique Mosconi", "gna": "Aeropuerto Internacional", "nam": "General Enrique Mosconi", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -67.46869910099997, -45.789996418999976 ] } },
-{ "type": "Feature", "properties": { "gid": 430, "entidad": 0, "fna": "Aeropuerto Comandante Espora", "gna": "Aeropuerto", "nam": "Comandante Espora", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -62.163770190999969, -38.716332054999953 ] } },
-{ "type": "Feature", "properties": { "gid": 434, "entidad": 0, "fna": "Aeropuerto Comodoro D. Ricardo Salomón", "gna": "Aeropuerto", "nam": "Comodoro D. Ricardo Salomón", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -69.584637766999947, -35.483473044999982 ] } },
-{ "type": "Feature", "properties": { "gid": 438, "entidad": 0, "fna": "Aeropuerto Internacional Gobernador Ramón Trejo Noel", "gna": "Aeropuerto Internacional", "nam": "Gobernador Ramón Trejo Noel", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -67.753371923999964, -53.781534859999965 ] } },
-{ "type": "Feature", "properties": { "gid": 448, "entidad": 0, "fna": "Aeropuerto Doctor Arturo Umberto Illia", "gna": "Aeropuerto", "nam": "Doctor Arturo Umberto Illia", "fun": 6.000000, "fdc": "IGN04\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -67.610268325999982, -39.003545375999977 ] } },
-{ "type": "Feature", "properties": { "gid": 474, "entidad": 0, "fna": "Aeropuerto Domingo Faustino Sarmiento", "gna": "Aeropuerto", "nam": "Domingo Faustino Sarmiento", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -68.42256710199996, -31.571853268999973 ] } },
-{ "type": "Feature", "properties": { "gid": 475, "entidad": 0, "fna": "Aeropuerto Internacional Francisco Gabrielli - El Plumerillo", "gna": "Aeropuerto Internacional", "nam": "Francisco Gabrielli - El Plumerillo", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -68.798582237999938, -32.827848007999933 ] } },
-{ "type": "Feature", "properties": { "gid": 513, "entidad": 0, "fna": "Aeropuerto Internacional Malvinas Argentinas", "gna": "Aeropuerto Internacional", "nam": "Malvinas Argentinas", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -68.312366994999934, -54.839513794999959 ] } },
-{ "type": "Feature", "properties": { "gid": 519, "entidad": 0, "fna": "Aeropuerto Internacional Almirante Marco Andrés Zar", "gna": "Aeropuerto Internacional", "nam": "Almirante Marco Andrés Zar", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -65.283431623999945, -43.209676026999944 ] } },
-{ "type": "Feature", "properties": { "gid": 544, "entidad": 0, "fna": "Aeropuerto Brigadier General Antonio Parodi", "gna": "Aeropuerto", "nam": "Brigadier General Antonio Parodi", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -71.146739375999971, -42.906111834999933 ] } },
-{ "type": "Feature", "properties": { "gid": 552, "entidad": 0, "fna": "Aeropuerto El Tehuelche", "gna": "Aeropuerto", "nam": "El Tehuelche", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -65.100409880999962, -42.755067074999943 ] } },
-{ "type": "Feature", "properties": { "gid": 558, "entidad": 0, "fna": "Aeropuerto Edgardo Hugo Yelpo", "gna": "Aeropuerto", "nam": "Edgardo Hugo Yelpo", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -58.811586316999978, -38.487206422999975 ] } },
-{ "type": "Feature", "properties": { "gid": 564, "entidad": 0, "fna": "Aeropuerto Gobernador Edgardo Castello", "gna": "Aeropuerto", "nam": "Gobernador Edgardo Castello", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -63.005597548999958, -40.863098177999973 ] } },
-{ "type": "Feature", "properties": { "gid": 573, "entidad": 0, "fna": "Aeropuerto Internacional Piloto Civil Norberto Fernández", "gna": "Aeropuerto Internacional", "nam": "Piloto Civil Norberto Fernández", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -69.306337417999941, -51.611716086999934 ] } },
-{ "type": "Feature", "properties": { "gid": 580, "entidad": 0, "fna": "Aeropuerto Vicecomodoro Ángel de la Paz Aragonés", "gna": "Aeropuerto", "nam": "Vicecomodoro Ángel de la Paz Aragonés", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -64.298946348999948, -27.756013870999936 ] } },
-{ "type": "Feature", "properties": { "gid": 590, "entidad": 0, "fna": "Aeropuerto Internacional Doctor Fernando Piragine Niveyro", "gna": "Aeropuerto Internacional", "nam": "Doctor Fernando Piragine Niveyro", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -58.758541603999959, -27.44905470499998 ] } },
-{ "type": "Feature", "properties": { "gid": 598, "entidad": 0, "fna": "Aeropuerto Internacional José de San Martín", "gna": "Aeropuerto Internacional", "nam": "José de San Martín", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -59.04873128, -27.44485037499993 ] } },
-{ "type": "Feature", "properties": { "gid": 603, "entidad": 0, "fna": "Aeropuerto Internacional Islas Malvinas", "gna": "Aeropuerto Internacional", "nam": "Islas Malvinas", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -60.780418898999983, -32.916938758999947 ] } },
-{ "type": "Feature", "properties": { "gid": 614, "entidad": 0, "fna": "Aeropuerto Internacional General Martín Miguel de Güemes", "gna": "Aeropuerto Internacional", "nam": "General Martín Miguel de Güemes", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -65.478434620999963, -24.844325265999942 ] } },
-{ "type": "Feature", "properties": { "gid": 624, "entidad": 0, "fna": "Aeropuerto Internacional Teniente Benjamín Matienzo", "gna": "Aeropuerto Internacional", "nam": "Teniente Benjamín Matienzo", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -65.108318520999944, -26.835813637999934 ] } },
-{ "type": "Feature", "properties": { "gid": 625, "entidad": 0, "fna": "Aeropuerto Internacional Paso de los Libres", "gna": "Aeropuerto Internacional", "nam": "Paso de los Libres", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -57.148794928999962, -29.688962577999973 ] } },
-{ "type": "Feature", "properties": { "gid": 626, "entidad": 0, "fna": "Aeropuerto Teniente Daniel Jukic", "gna": "Aeropuerto", "nam": "Teniente Daniel Jukic", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -59.693323860999953, -29.201636410999981 ] } },
-{ "type": "Feature", "properties": { "gid": 634, "entidad": 0, "fna": "Aeropuerto General Enrique Mosconi", "gna": "Aeropuerto", "nam": "General Enrique Mosconi", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -63.795650880999972, -22.615011268999979 ] } },
-{ "type": "Feature", "properties": { "gid": 637, "entidad": 0, "fna": "Aeropuerto Brigadier Mayor César Raúl Ojeda", "gna": "Aeropuerto", "nam": "Brigadier Mayor César Raúl Ojeda", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -66.350760758999968, -33.275072475999934 ] } },
-{ "type": "Feature", "properties": { "gid": 657, "entidad": 0, "fna": "Aeropuerto Capitán Vicente Almandos Almonacid", "gna": "Aeropuerto", "nam": "Capitán Vicente Almandos Almonacid", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -66.794227729999989, -29.383859740999981 ] } },
-{ "type": "Feature", "properties": { "gid": 658, "entidad": 0, "fna": "Aeropuerto Internacional El Pucú", "gna": "Aeropuerto Internacional", "nam": "El Pucú", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -58.230684396999948, -26.214118493999933 ] } },
-{ "type": "Feature", "properties": { "gid": 670, "entidad": 0, "fna": "Aeropuerto Metropolitano Santa Fe - Sauce Viejo", "gna": "Aeropuerto Metropolitano", "nam": "Santa Fe - Sauce Viejo", "fun": 6.000000, "fdc": "IGN\/ORSNA\/Sitio Web Institucional", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -60.806015672999933, -31.709016511999948 ] } },
-{ "type": "Feature", "properties": { "gid": 717, "entidad": 0, "fna": "Aeropuerto Coronel Felipe Varela", "gna": "Aeropuerto", "nam": "Coronel Felipe Varela", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -65.754951807999987, -28.592527674999928 ] } },
-{ "type": "Feature", "properties": { "gid": 719, "entidad": 0, "fna": "Aeropuerto Morón", "gna": "Aeropuerto", "nam": "Morón", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -58.643437069999948, -34.664136538999969 ] } },
-{ "type": "Feature", "properties": { "gid": 729, "entidad": 0, "fna": "Aeropuerto Internacional Libertador General Don José de San Martín", "gna": "Aeropuerto Internacional", "nam": "Libertador General Don José de San Martín", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -55.966798826999934, -27.39171672599997 ] } },
-{ "type": "Feature", "properties": { "gid": 730, "entidad": 0, "fna": "Aeropuerto Internacional Mayor Carlos Eduardo Krause", "gna": "Aeropuerto Internacional", "nam": "Mayor Carlos Eduardo Krause", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -54.47626506499995, -25.731811272999948 ] } },
-{ "type": "Feature", "properties": { "gid": 748, "entidad": 0, "fna": "Aeropuerto Internacional Gobernador Horacio Guzmán", "gna": "Aeropuerto Internacional", "nam": "Gobernador Horacio Guzmán", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -65.093821963999972, -24.38603789299998 ] } },
-{ "type": "Feature", "properties": { "gid": 752, "entidad": 0, "fna": "Aeropuerto Doctor Guillermo Snopek", "gna": "Aeropuerto", "nam": "Doctor Guillermo Snopek", "fun": 6.000000, "fdc": "IGN\/ANAC", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -65.578681335999988, -22.151004989999933 ] } },
-{ "type": "Feature", "properties": { "gid": 779, "entidad": 0, "fna": "Aeropuerto Termas de Río Hondo", "gna": "Aeropuerto", "nam": "Termas de Río Hondo", "fun": 6.000000, "fdc": "IGN\/ORSNA", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -64.933189862999939, -27.506307507999963 ] } },
-{ "type": "Feature", "properties": { "gid": 995, "entidad": 0, "fna": "Aeropuerto Cutral Có", "gna": "Aeropuerto", "nam": "Cutral Có", "fun": 6.000000, "fdc": "Esri-World_Imagery\/Ministerio de Transporte\/IGN01", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -69.268839868999976, -38.937355755999931 ] } },
-{ "type": "Feature", "properties": { "gid": 996, "entidad": 0, "fna": "Aeropuerto Internacional de San Carlos de Bariloche Teniente Luis Candelaria", "gna": "Aeropuerto Internacional", "nam": "de San Carlos de Bariloche Teniente Luis Candelaria", "fun": 6.000000, "fdc": "IGN04\/ORSNA\/Ministerio de Transporte de la Nación\/Dir. Geografía IGN", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -71.161880334999978, -41.147119945999975 ] } },
-{ "type": "Feature", "properties": { "gid": 1004, "entidad": 0, "fna": "Aeropuerto Aviador Carlos Campos", "gna": "Aeropuerto", "nam": "Aviador Carlos Campos", "fun": 6.000000, "fdc": "ESRI-World_Imagery_2010\/IGN01\/IGN04\/ANAC\/IGN Dirección de Geografía", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -71.143021962999967, -40.081123751999939 ] } },
-{ "type": "Feature", "properties": { "gid": 1024, "entidad": 0, "fna": "Aeródromo Yacimiento El Portón", "gna": "Aeródromo", "nam": "Yacimiento El Portón", "fun": 6.000000, "fdc": "Esri-world_imagery-2010\/IGN01\/Ministerio de Transporte de la la Nación", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -69.614885622999964, -37.19373203899994 ] } },
-{ "type": "Feature", "properties": { "gid": 1034, "entidad": 0, "fna": "Aeropuerto Internacional Presidente Perón", "gna": "Aeropuerto Internacional", "nam": "Presidente Perón", "fun": 6.000000, "fdc": "IGN04\/IGN01\/IGN Dirección de Geografía", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -68.140217055999983, -38.952156613999932 ] } },
-{ "type": "Feature", "properties": { "gid": 1047, "entidad": 0, "fna": "Aeropuerto Islas Malvinas", "gna": "Aeropuerto", "nam": "Islas Malvinas", "fun": -1.000000, "fdc": "Carta IGN 250.000", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -58.468770345999985, -51.822654946999933 ] } },
-{ "type": "Feature", "properties": { "gid": 1074, "entidad": 0, "fna": null, "gna": null, "nam": null, "fun": -1.000000, "fdc": "Imagery", "sag": "IGN" }, "geometry": { "type": "Point", "coordinates": [ -57.779037329999937, -51.68759270399994 ] } }
-]
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 32,
+        "entidad": 0,
+        "fna": "Aeropuerto Astor Piazzolla",
+        "gna": "Aeropuerto",
+        "nam": "Astor Piazzolla",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-57.581535323999958, -37.93323406899998]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 65,
+        "entidad": 0,
+        "fna": "Aeropuerto Suboficial Ayudante Santiago Germano",
+        "gna": "Aeropuerto",
+        "nam": "Suboficial Ayudante Santiago Germano",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.400629998999989, -34.591288481999982]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 72,
+        "entidad": 0,
+        "fna": "Aeropuerto Comodoro Juan José Pierrestegui",
+        "gna": "Aeropuerto",
+        "nam": "Comodoro Juan José Pierrestegui",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.002245734999974, -31.302628542999969]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 75,
+        "entidad": 0,
+        "fna": "Aeropuerto Río Cuarto",
+        "gna": "Aeropuerto",
+        "nam": "Río Cuarto",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.277812532999974, -33.096018283999967]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 87,
+        "entidad": 0,
+        "fna": "Aeropuerto General Justo José de Urquiza",
+        "gna": "Aeropuerto",
+        "nam": "General Justo José de Urquiza",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-60.483907071999965, -31.78956498499997]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 102,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Ingeniero Aeronáutico Ambrosio Taravella - Pajas Blancas",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Ingeniero Aeronáutico Ambrosio Taravella - Pajas Blancas",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.213720914999953, -31.315574496999943]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 151,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Valle del Conlara",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Valle del Conlara",
+        "fun": -1.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.179973211999936, -32.380455948999952]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 206,
+        "entidad": 0,
+        "fna": "Aeroparque Jorge Newbery",
+        "gna": "Aeroparque",
+        "nam": "Jorge Newbery",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.412270465999939, -34.557494892999955]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 209,
+        "entidad": 0,
+        "fna": "Aeropuerto Héroes de Malvinas",
+        "gna": "Aeropuerto",
+        "nam": "Héroes de Malvinas",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-59.234037043999933, -37.241161377999958]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 214,
+        "entidad": 0,
+        "fna": "Aeropuerto La Plata",
+        "gna": "Aeropuerto",
+        "nam": "La Plata",
+        "fun": -1.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-57.895412875999966, -34.965492935999976]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 219,
+        "entidad": 0,
+        "fna": "Aeropuerto El Palomar",
+        "gna": "Aeropuerto",
+        "nam": "El Palomar",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.600178409999955, -34.605361160999962]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 221,
+        "entidad": 0,
+        "fna": "Aeropuerto General Pico",
+        "gna": "Aeropuerto",
+        "nam": "General Pico",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-63.758281279999949, -35.689304166999932]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 240,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Ministro Pistarini",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Ministro Pistarini",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.539235679999933, -34.812505900999952]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 242,
+        "entidad": 0,
+        "fna": "Aeropuerto Santa Rosa",
+        "gna": "Aeropuerto",
+        "nam": "Santa Rosa",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.279425211999978, -36.59183313099993]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 265,
+        "entidad": 0,
+        "fna": "Aeropuerto Primer Teniente Jorge Eduardo Casco",
+        "gna": "Aeropuerto",
+        "nam": "Primer Teniente Jorge Eduardo Casco",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-60.486090618999981, -26.748926971999936]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 274,
+        "entidad": 0,
+        "fna": "Aeropuerto Comandante Armando Tola",
+        "gna": "Aeropuerto",
+        "nam": "Comandante Armando Tola",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.053794948999951, -50.283902315999967]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 294,
+        "entidad": 0,
+        "fna": "Aeropuerto Villa Reynolds",
+        "gna": "Aeropuerto",
+        "nam": "Villa Reynolds",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.376983006999978, -33.720130369999936]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 313,
+        "entidad": 0,
+        "fna": "Aeropuerto Villa Gesell",
+        "gna": "Aeropuerto",
+        "nam": "Villa Gesell",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-57.020960108999986, -37.234488708999947]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 368,
+        "entidad": 0,
+        "fna": "Aeropuerto Regional Presidente Néstor Carlos Kirchner",
+        "gna": "Aeropuerto Regional",
+        "nam": "Presidente Néstor Carlos Kirchner",
+        "fun": -1.0,
+        "fdc": "IGN/ANAC/Street View",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-63.230949014999965, -32.327317285999982]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 380,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional San Fernando",
+        "gna": "Aeropuerto Internacional",
+        "nam": "San Fernando",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.583998752999946, -34.455847985999981]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 427,
+        "entidad": 0,
+        "fna": "Aeropuerto 28 de Noviembre",
+        "gna": "Aeropuerto",
+        "nam": "28 de Noviembre",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.227765895999937, -51.604062279999937]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 428,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional General Enrique Mosconi",
+        "gna": "Aeropuerto Internacional",
+        "nam": "General Enrique Mosconi",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-67.46869910099997, -45.789996418999976]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 430,
+        "entidad": 0,
+        "fna": "Aeropuerto Comandante Espora",
+        "gna": "Aeropuerto",
+        "nam": "Comandante Espora",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-62.163770190999969, -38.716332054999953]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 434,
+        "entidad": 0,
+        "fna": "Aeropuerto Comodoro D. Ricardo Salomón",
+        "gna": "Aeropuerto",
+        "nam": "Comodoro D. Ricardo Salomón",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-69.584637766999947, -35.483473044999982]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 438,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Gobernador Ramón Trejo Noel",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Gobernador Ramón Trejo Noel",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-67.753371923999964, -53.781534859999965]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 448,
+        "entidad": 0,
+        "fna": "Aeropuerto Doctor Arturo Umberto Illia",
+        "gna": "Aeropuerto",
+        "nam": "Doctor Arturo Umberto Illia",
+        "fun": 6.0,
+        "fdc": "IGN04/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-67.610268325999982, -39.003545375999977]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 474,
+        "entidad": 0,
+        "fna": "Aeropuerto Domingo Faustino Sarmiento",
+        "gna": "Aeropuerto",
+        "nam": "Domingo Faustino Sarmiento",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.42256710199996, -31.571853268999973]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 475,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Francisco Gabrielli - El Plumerillo",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Francisco Gabrielli - El Plumerillo",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.798582237999938, -32.827848007999933]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 513,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Malvinas Argentinas",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Malvinas Argentinas",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.312366994999934, -54.839513794999959]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 519,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Almirante Marco Andrés Zar",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Almirante Marco Andrés Zar",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.283431623999945, -43.209676026999944]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 544,
+        "entidad": 0,
+        "fna": "Aeropuerto Brigadier General Antonio Parodi",
+        "gna": "Aeropuerto",
+        "nam": "Brigadier General Antonio Parodi",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.146739375999971, -42.906111834999933]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 552,
+        "entidad": 0,
+        "fna": "Aeropuerto El Tehuelche",
+        "gna": "Aeropuerto",
+        "nam": "El Tehuelche",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.100409880999962, -42.755067074999943]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 558,
+        "entidad": 0,
+        "fna": "Aeropuerto Edgardo Hugo Yelpo",
+        "gna": "Aeropuerto",
+        "nam": "Edgardo Hugo Yelpo",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.811586316999978, -38.487206422999975]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 564,
+        "entidad": 0,
+        "fna": "Aeropuerto Gobernador Edgardo Castello",
+        "gna": "Aeropuerto",
+        "nam": "Gobernador Edgardo Castello",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-63.005597548999958, -40.863098177999973]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 573,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Piloto Civil Norberto Fernández",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Piloto Civil Norberto Fernández",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-69.306337417999941, -51.611716086999934]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 580,
+        "entidad": 0,
+        "fna": "Aeropuerto Vicecomodoro Ángel de la Paz Aragonés",
+        "gna": "Aeropuerto",
+        "nam": "Vicecomodoro Ángel de la Paz Aragonés",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.298946348999948, -27.756013870999936]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 590,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Doctor Fernando Piragine Niveyro",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Doctor Fernando Piragine Niveyro",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.758541603999959, -27.44905470499998]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 598,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional José de San Martín",
+        "gna": "Aeropuerto Internacional",
+        "nam": "José de San Martín",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-59.04873128, -27.44485037499993]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 603,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Islas Malvinas",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Islas Malvinas",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-60.780418898999983, -32.916938758999947]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 614,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional General Martín Miguel de Güemes",
+        "gna": "Aeropuerto Internacional",
+        "nam": "General Martín Miguel de Güemes",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.478434620999963, -24.844325265999942]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 624,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Teniente Benjamín Matienzo",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Teniente Benjamín Matienzo",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.108318520999944, -26.835813637999934]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 625,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Paso de los Libres",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Paso de los Libres",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-57.148794928999962, -29.688962577999973]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 626,
+        "entidad": 0,
+        "fna": "Aeropuerto Teniente Daniel Jukic",
+        "gna": "Aeropuerto",
+        "nam": "Teniente Daniel Jukic",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-59.693323860999953, -29.201636410999981]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 634,
+        "entidad": 0,
+        "fna": "Aeropuerto General Enrique Mosconi",
+        "gna": "Aeropuerto",
+        "nam": "General Enrique Mosconi",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-63.795650880999972, -22.615011268999979]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 637,
+        "entidad": 0,
+        "fna": "Aeropuerto Brigadier Mayor César Raúl Ojeda",
+        "gna": "Aeropuerto",
+        "nam": "Brigadier Mayor César Raúl Ojeda",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-66.350760758999968, -33.275072475999934]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 657,
+        "entidad": 0,
+        "fna": "Aeropuerto Capitán Vicente Almandos Almonacid",
+        "gna": "Aeropuerto",
+        "nam": "Capitán Vicente Almandos Almonacid",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-66.794227729999989, -29.383859740999981]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 658,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional El Pucú",
+        "gna": "Aeropuerto Internacional",
+        "nam": "El Pucú",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.230684396999948, -26.214118493999933]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 670,
+        "entidad": 0,
+        "fna": "Aeropuerto Metropolitano Santa Fe - Sauce Viejo",
+        "gna": "Aeropuerto Metropolitano",
+        "nam": "Santa Fe - Sauce Viejo",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA/Sitio Web Institucional",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-60.806015672999933, -31.709016511999948]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 717,
+        "entidad": 0,
+        "fna": "Aeropuerto Coronel Felipe Varela",
+        "gna": "Aeropuerto",
+        "nam": "Coronel Felipe Varela",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.754951807999987, -28.592527674999928]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 719,
+        "entidad": 0,
+        "fna": "Aeropuerto Morón",
+        "gna": "Aeropuerto",
+        "nam": "Morón",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.643437069999948, -34.664136538999969]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 729,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Libertador General Don José de San Martín",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Libertador General Don José de San Martín",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55.966798826999934, -27.39171672599997]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 730,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Mayor Carlos Eduardo Krause",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Mayor Carlos Eduardo Krause",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-54.47626506499995, -25.731811272999948]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 748,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Gobernador Horacio Guzmán",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Gobernador Horacio Guzmán",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.093821963999972, -24.38603789299998]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 752,
+        "entidad": 0,
+        "fna": "Aeropuerto Doctor Guillermo Snopek",
+        "gna": "Aeropuerto",
+        "nam": "Doctor Guillermo Snopek",
+        "fun": 6.0,
+        "fdc": "IGN/ANAC",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-65.578681335999988, -22.151004989999933]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 779,
+        "entidad": 0,
+        "fna": "Aeropuerto Termas de Río Hondo",
+        "gna": "Aeropuerto",
+        "nam": "Termas de Río Hondo",
+        "fun": 6.0,
+        "fdc": "IGN/ORSNA",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-64.933189862999939, -27.506307507999963]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 995,
+        "entidad": 0,
+        "fna": "Aeropuerto Cutral Có",
+        "gna": "Aeropuerto",
+        "nam": "Cutral Có",
+        "fun": 6.0,
+        "fdc": "Esri-World_Imagery/Ministerio de Transporte/IGN01",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-69.268839868999976, -38.937355755999931]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 996,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional de San Carlos de Bariloche Teniente Luis Candelaria",
+        "gna": "Aeropuerto Internacional",
+        "nam": "de San Carlos de Bariloche Teniente Luis Candelaria",
+        "fun": 6.0,
+        "fdc": "IGN04/ORSNA/Ministerio de Transporte de la Nación/Dir. Geografía IGN",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.161880334999978, -41.147119945999975]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 1004,
+        "entidad": 0,
+        "fna": "Aeropuerto Aviador Carlos Campos",
+        "gna": "Aeropuerto",
+        "nam": "Aviador Carlos Campos",
+        "fun": 6.0,
+        "fdc": "ESRI-World_Imagery_2010/IGN01/IGN04/ANAC/IGN Dirección de Geografía",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.143021962999967, -40.081123751999939]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 1024,
+        "entidad": 0,
+        "fna": "Aeródromo Yacimiento El Portón",
+        "gna": "Aeródromo",
+        "nam": "Yacimiento El Portón",
+        "fun": 6.0,
+        "fdc": "Esri-world_imagery-2010/IGN01/Ministerio de Transporte de la la Nación",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-69.614885622999964, -37.19373203899994]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 1034,
+        "entidad": 0,
+        "fna": "Aeropuerto Internacional Presidente Perón",
+        "gna": "Aeropuerto Internacional",
+        "nam": "Presidente Perón",
+        "fun": 6.0,
+        "fdc": "IGN04/IGN01/IGN Dirección de Geografía",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-68.140217055999983, -38.952156613999932]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "gid": 1047,
+        "entidad": 0,
+        "fna": "Aeropuerto Islas Malvinas",
+        "gna": "Aeropuerto",
+        "nam": "Islas Malvinas",
+        "fun": -1.0,
+        "fdc": "Carta IGN 250.000",
+        "sag": "IGN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.468770345999985, -51.822654946999933]
+      }
+    }
+  ]
 }

@@ -1,16 +1,28 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import * as d3 from "d3";
 import { geoVoronoi } from "d3-geo-voronoi";
 import provincesData from "../../public/argentina-provinces.json";
 import airportsData from "../../public/argentina-airports.json";
+import { allCards } from "contentlayer/generated";
+import { notFound } from "next/navigation";
+import { Mdx } from "@/components/mdx";
+import { useLocale } from "@/context/language-context";
 
 export default function Home() {
   const svgRef = useRef();
   const tooltipRef = useRef();
   const width = 600;
   const height = 800;
+
+  const locale = useLocale();
+  const article = allCards.find(
+    (card: any) => card.identifier === "airports" && card.locale === locale
+    );
+  if (!article) {
+    notFound();
+  }
 
   useEffect(() => {
     const svgElement = d3.select(svgRef.current);
@@ -43,11 +55,11 @@ export default function Home() {
     const mouseenter = function (d) {
       console.log(d.target.__data__.properties.site.properties.fna);
       tooltip.classed("hidden", false);
-      tooltip.html(d.target.__data__.properties.site.properties.fna);
+      tooltip.select("span").html(d.target.__data__.properties.site.properties.fna);
     };
     const mousemove = function(d) {
       const x = d.clientX 
-      const y = d.clientY - 200
+      const y = d.clientY - 140
       tooltip.classed("hidden", false)
       tooltip.style("left", x + "px")
       tooltip.style("top", y + "px")
@@ -93,7 +105,11 @@ export default function Home() {
   return (
     <>
       <svg viewBox={`0 0 ${width} ${height}`} ref={svgRef}></svg>
-      <div ref={tooltipRef} className="hidden absolute bg-red-700 w-60 h-40"></div>
+      <div ref={tooltipRef} className="hidden absolute p-4 dark:bg-gray-600/90 bg-neutral-400/90 w-60 h-32 rounded-lg overflow-hidden">
+        <span className="text-clip text-sm opacity-100"></span>
+      </div>
+      <br />
+      <Mdx code={article.body.code} />
     </>
   );
 }
