@@ -1,6 +1,7 @@
 import "./globals.css";
 import clsx from "clsx";
 import { Menu } from "@/components/menu";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { NavBar } from "@/components/navbar";
 import { MainCard } from "@/components/main-card";
 import { Inter } from "next/font/google";
@@ -39,16 +40,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lang} className={clsx(inter.className)}>
+      <SpeedInsights />
       <ThemeProvider>
         <LanguageProvider locale={params.lang}>
           <body className="text-gray-800 bg-neutral-200 dark:text-gray-400 dark:bg-[#1e1e1e]">
             <div className="max-w-4xl md:mx-auto w-full">
-
               {/* Top NavBar */}
               <div className="w-full">
                 <NavBar />
               </div>
-              
               {/* Menu and Main */}
               <div className="flex md:flex-row flex-col md:items-start mx-auto h-fit items-center">
                 <div className="md:ml-8 md:w-fit w-full md:min-w-[20%]">
@@ -58,7 +58,6 @@ export default function RootLayout({
                   <MainCard>{children}</MainCard>
                 </div>
               </div>
-
             </div>
           </body>
         </LanguageProvider>
