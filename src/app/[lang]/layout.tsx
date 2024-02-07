@@ -42,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang={params.lang} className={clsx(inter.className)}>
       <SpeedInsights />
+      <Analytics />
       <ThemeProvider>
         <LanguageProvider locale={params.lang}>
           <body className="text-gray-800 bg-neutral-200 dark:text-gray-400 dark:bg-[#1e1e1e]">
