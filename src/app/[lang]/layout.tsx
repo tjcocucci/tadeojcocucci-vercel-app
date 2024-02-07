@@ -2,6 +2,7 @@ import "./globals.css";
 import clsx from "clsx";
 import { Menu } from "@/components/menu";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from '@vercel/analytics/react';
 import { NavBar } from "@/components/navbar";
 import { MainCard } from "@/components/main-card";
 import { Inter } from "next/font/google";
