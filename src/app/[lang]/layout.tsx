@@ -2,7 +2,7 @@ import "./globals.css";
 import clsx from "clsx";
 import { Menu } from "@/components/menu";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import { NavBar } from "@/components/navbar";
 import { MainCard } from "@/components/main-card";
 import { Inter } from "next/font/google";
@@ -41,11 +41,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lang} className={clsx(inter.className)}>
-      <SpeedInsights />
-      <Analytics />
       <ThemeProvider>
         <LanguageProvider locale={params.lang}>
           <body className="text-gray-800 bg-neutral-200 dark:text-gray-400 dark:bg-[#1e1e1e]">
+            <SpeedInsights />
+            <Analytics />
             <div className="max-w-4xl md:mx-auto w-full">
               {/* Top NavBar */}
               <div className="w-full">
