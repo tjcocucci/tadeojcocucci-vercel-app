@@ -32,6 +32,12 @@ export const softwareTools = [
         image: "python",
       },
       {
+        title: ".NET",
+        description: ".NET framework",
+        link: "https://dotnet.microsoft.com/",
+        image: "dotnet",
+      },
+      {
         title: "Django",
         description: "Python framework",
         link: "https://www.djangoproject.org/",
@@ -94,6 +100,22 @@ export const softwareTools = [
         description: "Document preparation system",
         link: "https://www.latex-project.org/",
         image: "latex",
+      },
+    ],
+  },
+  {
+    devops: [
+      {
+        title: "AWS",
+        description: "Amazon Web Services",
+        link: "https://aws.amazon.com/",
+        image: "aws",
+      },
+      {
+        title: "Terraform",
+        description: "Infrastructure as code",
+        link: "https://www.terraform.io/",
+        image: "terraform",
       },
     ],
   },
