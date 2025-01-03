@@ -37,5 +37,9 @@
   "gameDev": "Game Dev",
   "devops": "DevOps",
   "generalTools": "Herramientas generales",
-  "contactInfo": "Información de contacto"
+  "contactInfo": "Información de contacto",
+  "english": "Inglés",
+  "spanish": "Español",
+  "complete": "Completo",
+  "singlePage": "Página única"
 }

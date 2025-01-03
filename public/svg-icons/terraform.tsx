@@ -6,7 +6,7 @@ export default function TerraformIcon({ width = 24, height = 24 }) {
       width={width}
       height={height}
     >
-      <g fill-rule="evenodd">
+      <g fillRule="evenodd">
         <path
           d="M77.941 44.5v36.836L46.324 62.918V26.082zm0 0"
           fill="#5c4ee5"
